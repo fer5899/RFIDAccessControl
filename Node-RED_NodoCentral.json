@@ -1,0 +1,5563 @@
+[
+    {
+        "id": "303f649a904520e9",
+        "type": "tab",
+        "label": "Serial",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "9367d904c92519d6",
+        "type": "tab",
+        "label": "Interfaz",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "05ebb2dc1794c426",
+        "type": "tab",
+        "label": "Base de datos",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "9a2c567d.c9bc58",
+        "type": "tab",
+        "label": "FOTA",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "f0d09c4eeddaf457",
+        "type": "serial-port",
+        "serialport": "/dev/ttyAMA0",
+        "serialbaud": "115200",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "\\n",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "6b0dbc3fe2272bf2",
+        "type": "mongodb",
+        "hostname": "127.0.0.1",
+        "topology": "direct",
+        "connectOptions": "authSource=admin",
+        "port": "27017",
+        "db": "tfg",
+        "name": ""
+    },
+    {
+        "id": "c2b66337daef9d4a",
+        "type": "ui_tab",
+        "name": "Administrar usuarios",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "74e8cceeef40b80d",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Interfaz de Control de Acceso",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 8,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "f7e2cc2af4e3d2ce",
+        "type": "ui_group",
+        "name": "Resultados de la búsqueda",
+        "tab": "6944e04dee9f6094",
+        "order": 2,
+        "disp": true,
+        "width": "10",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6944e04dee9f6094",
+        "type": "ui_tab",
+        "name": "Visualización de accesos",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "3b42f88e5dffd699",
+        "type": "ui_group",
+        "name": "Añadir nuevo usuario",
+        "tab": "c2b66337daef9d4a",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f7a27a504d8737cb",
+        "type": "ui_link",
+        "name": "Actualización de firmware",
+        "link": "http://192.168.1.132:1880/esp8266-ota",
+        "icon": "open_in_browser",
+        "target": "newtab",
+        "order": 3
+    },
+    {
+        "id": "ee24240c1fb6fcac",
+        "type": "ui_group",
+        "name": "Filtrar búsqueda",
+        "tab": "6944e04dee9f6094",
+        "order": 1,
+        "disp": true,
+        "width": "7",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d6985e1a7fc8f2d3",
+        "type": "ui_group",
+        "name": "Borrar usuarios",
+        "tab": "c2b66337daef9d4a",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "47f6b2b6c0a2a7ac",
+        "type": "ui_group",
+        "name": "Usuarios registrados",
+        "tab": "c2b66337daef9d4a",
+        "order": 2,
+        "disp": true,
+        "width": "10",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0bfe7abaf4fec395",
+        "type": "serial in",
+        "z": "303f649a904520e9",
+        "name": "Recibir de Placa Serial",
+        "serial": "f0d09c4eeddaf457",
+        "x": 200,
+        "y": 140,
+        "wires": [
+            [
+                "ba7c3d9d27b6924a"
+            ]
+        ]
+    },
+    {
+        "id": "74ed19e4f72fae05",
+        "type": "serial out",
+        "z": "303f649a904520e9",
+        "name": "Enviar a Placa Serial",
+        "serial": "f0d09c4eeddaf457",
+        "x": 520,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "d5ecdbc089a49366",
+        "type": "inject",
+        "z": "303f649a904520e9",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0 5000 1 5000 1 1",
+        "payloadType": "str",
+        "x": 190,
+        "y": 840,
+        "wires": [
+            [
+                "74ed19e4f72fae05"
+            ]
+        ]
+    },
+    {
+        "id": "297e067d0b5b52c6",
+        "type": "serial out",
+        "z": "303f649a904520e9",
+        "name": "Enviar a Placa Serial",
+        "serial": "f0d09c4eeddaf457",
+        "x": 380,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "7fba7d7d36e00ca7",
+        "type": "inject",
+        "z": "303f649a904520e9",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "reset",
+        "payloadType": "str",
+        "x": 150,
+        "y": 1120,
+        "wires": [
+            [
+                "297e067d0b5b52c6"
+            ]
+        ]
+    },
+    {
+        "id": "ad4c08eb8a84db75",
+        "type": "comment",
+        "z": "303f649a904520e9",
+        "name": "Resetear placa serial",
+        "info": "",
+        "x": 180,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "78bf2c5a29e1592c",
+        "type": "serial out",
+        "z": "303f649a904520e9",
+        "name": "Enviar a Placa Serial",
+        "serial": "f0d09c4eeddaf457",
+        "x": 520,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "cb9849b71c60a3b7",
+        "type": "inject",
+        "z": "303f649a904520e9",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0 -1 0 0 0 0",
+        "payloadType": "str",
+        "x": 170,
+        "y": 1000,
+        "wires": [
+            [
+                "78bf2c5a29e1592c"
+            ]
+        ]
+    },
+    {
+        "id": "eb8e3ea84e07ad18",
+        "type": "comment",
+        "z": "303f649a904520e9",
+        "name": "Resetear placa lectora",
+        "info": "",
+        "x": 180,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "ba7c3d9d27b6924a",
+        "type": "function",
+        "z": "303f649a904520e9",
+        "name": "Separar entrada",
+        "func": "var entrada_separada = msg.payload.split(\" \");\nmsg.tipo_entrada = entrada_separada[0];\n\nif(msg.tipo_entrada == \"Lectura:\") {\n    msg.id_tarjeta = entrada_separada[2].trim();\n    msg.puerta = entrada_separada[1];\n    msg.payload = {id_tarjeta : msg.id_tarjeta};\n    return [null, msg];    \n} else {\n    return [msg, null];\n}\n\nreturn msg;",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 140,
+        "wires": [
+            [
+                "d54fc8ec9c0ea7fe"
+            ],
+            [
+                "6c0e3567c234e918",
+                "711173cb04963111"
+            ]
+        ]
+    },
+    {
+        "id": "d54fc8ec9c0ea7fe",
+        "type": "debug",
+        "z": "303f649a904520e9",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 670,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "168639afa58f2475",
+        "type": "link out",
+        "z": "303f649a904520e9",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "92907122ebed4cf7"
+        ],
+        "x": 1355,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "3d34e4914f8c5c62",
+        "type": "link in",
+        "z": "303f649a904520e9",
+        "name": "",
+        "links": [
+            "9098fee8ebf20320"
+        ],
+        "x": 1405,
+        "y": 120,
+        "wires": [
+            [
+                "39efc6589e257d08",
+                "4f710e76dd29720a"
+            ]
+        ]
+    },
+    {
+        "id": "39efc6589e257d08",
+        "type": "switch",
+        "z": "303f649a904520e9",
+        "name": "¿El id_tarjeta está registrado en la base de datos?",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "empty"
+            },
+            {
+                "t": "nempty"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1640,
+        "y": 120,
+        "wires": [
+            [
+                "22455155a1fb46ef",
+                "2cd63b3146aca06b",
+                "b39c0831022ef12c"
+            ],
+            [
+                "4dd5520ab149816f",
+                "60470a2768b20beb",
+                "a165466a71c17a07"
+            ]
+        ]
+    },
+    {
+        "id": "8f2a564e4db3acdf",
+        "type": "comment",
+        "z": "303f649a904520e9",
+        "name": "Sí",
+        "info": "",
+        "x": 1780,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "12fe7bf18ac00df8",
+        "type": "comment",
+        "z": "303f649a904520e9",
+        "name": "No",
+        "info": "",
+        "x": 1780,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "44e8554b14dd04cd",
+        "type": "serial out",
+        "z": "303f649a904520e9",
+        "name": "Enviar a Placa Serial",
+        "serial": "f0d09c4eeddaf457",
+        "x": 2660,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "22455155a1fb46ef",
+        "type": "function",
+        "z": "303f649a904520e9",
+        "name": "Intento de entrada fallido",
+        "func": "// El led rojo se enciende durante 3 segundos y la puerta no se abre\nmsg.payload = msg.puerta + \" 3000 0 0 0 0\"; \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1980,
+        "y": 60,
+        "wires": [
+            [
+                "44e8554b14dd04cd",
+                "5926b2b35ded29a2",
+                "73e1f742775cdf22"
+            ]
+        ]
+    },
+    {
+        "id": "4dd5520ab149816f",
+        "type": "switch",
+        "z": "303f649a904520e9",
+        "name": "¿Tiene permisos de administrador?",
+        "property": "payload[0].admin",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "false"
+            },
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 2030,
+        "y": 300,
+        "wires": [
+            [
+                "6bca4f694b030236",
+                "5926b2b35ded29a2",
+                "f2ebdfd9e88a7b83",
+                "73e1f742775cdf22"
+            ],
+            [
+                "6bca4f694b030236",
+                "1998eb276c0d8e90",
+                "f58332de7762b7b7",
+                "7649a2a142fc7b2e"
+            ]
+        ]
+    },
+    {
+        "id": "f6df32c87ead940f",
+        "type": "comment",
+        "z": "303f649a904520e9",
+        "name": "No",
+        "info": "",
+        "x": 2120,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "7857f4acabc2902b",
+        "type": "comment",
+        "z": "303f649a904520e9",
+        "name": "Sí",
+        "info": "",
+        "x": 2120,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "6bca4f694b030236",
+        "type": "function",
+        "z": "303f649a904520e9",
+        "name": "Entrada permitida",
+        "func": "// El led rojo se enciende durante 3 segundos y la puerta no se abre\n// Estructura del mensaje:\n// {id_puerta, tiempo_led_rojo_ms, parpadeo_led_rojo, tiempo_led_verde_ms, parpadeo_led_verde, acceso}\nmsg.payload = msg.puerta + \" 0 0 3000 0 1\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2370,
+        "y": 240,
+        "wires": [
+            [
+                "44e8554b14dd04cd"
+            ]
+        ]
+    },
+    {
+        "id": "28cff1fac921a0f6",
+        "type": "comment",
+        "z": "303f649a904520e9",
+        "name": "Consultar DB",
+        "info": "",
+        "x": 1380,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "2cd63b3146aca06b",
+        "type": "link out",
+        "z": "303f649a904520e9",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "6168e01933b9bf66"
+        ],
+        "x": 1915,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "60470a2768b20beb",
+        "type": "link out",
+        "z": "303f649a904520e9",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "b27f25d0d413c57e"
+        ],
+        "x": 1915,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "212641810936b3ac",
+        "type": "comment",
+        "z": "303f649a904520e9",
+        "name": "Registrar acceso denegado",
+        "info": "",
+        "x": 2100,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "4b225cf95b4785c8",
+        "type": "comment",
+        "z": "303f649a904520e9",
+        "name": "Registrar acceso permitido",
+        "info": "",
+        "x": 2090,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "6c0e3567c234e918",
+        "type": "function",
+        "z": "303f649a904520e9",
+        "name": "Consultar modo",
+        "func": "modo = flow.get(\"modo_lector\")[msg.puerta];\n\nif (modo == \"estandar\") {\n    msg.modo = \"estandar\";\n    return [msg, null, null, null];\n}\n\nif (modo == \"espera_admin\") {\n    msg.modo = \"espera_admin\";\n    return [null, msg, null, null];\n}\n\nif (modo == \"espera_tarjeta\") {\n    msg.modo = \"espera_tarjeta\";\n    return [null, null, msg, null];\n}\n\nif (modo == \"confirma_borrar\") {\n    msg.modo = \"confirma_borrar\";\n    return [null, null, null, msg];\n}\n\nreturn msg;",
+        "outputs": 4,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 640,
+        "wires": [
+            [
+                "168639afa58f2475",
+                "2c61263c89a640a4",
+                "7ee0c4a71818d67e"
+            ],
+            [
+                "e64e0059960919a3",
+                "38c5735fc566a9e1"
+            ],
+            [
+                "91e5fe8305ce2285",
+                "7429f937ce7ba2f7"
+            ],
+            [
+                "dc32161981ed446a",
+                "77d89cbc878e237a"
+            ]
+        ]
+    },
+    {
+        "id": "9fd580b46de43f0f",
+        "type": "inject",
+        "z": "303f649a904520e9",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "estandar",
+        "payloadType": "str",
+        "x": 160,
+        "y": 1280,
+        "wires": [
+            [
+                "c77b5a6ead30c237"
+            ]
+        ]
+    },
+    {
+        "id": "c77b5a6ead30c237",
+        "type": "function",
+        "z": "303f649a904520e9",
+        "name": "Crear array de modo_lector",
+        "func": "let modo_estandar = msg.payload;\nmsg.payload = [];\nfor (let i = 0; i < 20; i++) {\n    msg.payload.push(modo_estandar);\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nlet modo_estandar = \"estandar\";\nmodos = [];\nfor (let i = 0; i < 20; i++) {\n    modos.push(modo_estandar);\n}\n\nflow.set(\"modo_lector\", modos);",
+        "finalize": "// Code added here will be run when the\n// node is being stopped or re-deployed.\nlet modo_estandar = \"estandar\";\nmodos = [];\nfor (let i = 0; i < 20; i++) {\n    modos.push(modo_estandar);\n}\n\nflow.set(\"modo_lector\", modos);",
+        "libs": [],
+        "x": 400,
+        "y": 1280,
+        "wires": [
+            [
+                "7b7f91387c9fd37c"
+            ]
+        ]
+    },
+    {
+        "id": "7b7f91387c9fd37c",
+        "type": "change",
+        "z": "303f649a904520e9",
+        "name": "Guardar array de modo_lector",
+        "rules": [
+            {
+                "t": "set",
+                "p": "modo_lector",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 690,
+        "y": 1280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b8e94e59c03dfdd5",
+        "type": "inject",
+        "z": "303f649a904520e9",
+        "name": "Mostrar array de modos",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "modo_lector",
+        "payloadType": "flow",
+        "x": 200,
+        "y": 1380,
+        "wires": [
+            [
+                "2ebe5b458614f54e"
+            ]
+        ]
+    },
+    {
+        "id": "2ebe5b458614f54e",
+        "type": "debug",
+        "z": "303f649a904520e9",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 430,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "feeca5ed30e3f4e5",
+        "type": "comment",
+        "z": "303f649a904520e9",
+        "name": "Resetear array de modos",
+        "info": "",
+        "x": 190,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "92709b5f867ae35a",
+        "type": "comment",
+        "z": "303f649a904520e9",
+        "name": "modo \"estandar\"",
+        "info": "",
+        "x": 1400,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "1998eb276c0d8e90",
+        "type": "function",
+        "z": "303f649a904520e9",
+        "name": "Cambiar a modo \"espera_admin\"",
+        "func": "modos = flow.get(\"modo_lector\");\nmodos[msg.puerta] = \"espera_admin\";\nflow.set(\"modo_lector\", modos);",
+        "outputs": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2380,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "591568a28cf3e37d",
+        "type": "comment",
+        "z": "303f649a904520e9",
+        "name": "modo \"espera_admin\"",
+        "info": "",
+        "x": 1420,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "8e6be4477709dde6",
+        "type": "comment",
+        "z": "303f649a904520e9",
+        "name": "modo \"espera_tarjeta\"",
+        "info": "",
+        "x": 1420,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "bcc0281edc3c0266",
+        "type": "comment",
+        "z": "303f649a904520e9",
+        "name": "modo \"confirma_borrar\"",
+        "info": "",
+        "x": 1420,
+        "y": 1680,
+        "wires": []
+    },
+    {
+        "id": "f58332de7762b7b7",
+        "type": "delay",
+        "z": "303f649a904520e9",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2300,
+        "y": 420,
+        "wires": [
+            [
+                "73a8147224d60817"
+            ]
+        ]
+    },
+    {
+        "id": "73a8147224d60817",
+        "type": "function",
+        "z": "303f649a904520e9",
+        "name": "Volver a estandar si se sigue en \"espera_admin\"",
+        "func": "modos = flow.get(\"modo_lector\");\nif (modos[msg.puerta] == \"espera_admin\") {\n    modos[msg.puerta] = \"estandar\";\n    flow.set(\"modo_lector\", modos);\n    \n    return msg;\n}\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2580,
+        "y": 420,
+        "wires": [
+            [
+                "6c4347722a11bd0d"
+            ]
+        ]
+    },
+    {
+        "id": "806c6543b1d61bb9",
+        "type": "inject",
+        "z": "303f649a904520e9",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 150,
+        "y": 1540,
+        "wires": [
+            [
+                "1c47440a538a050a"
+            ]
+        ]
+    },
+    {
+        "id": "1c47440a538a050a",
+        "type": "function",
+        "z": "303f649a904520e9",
+        "name": "Crear array de ultima_tarjeta",
+        "func": "let nada = msg.payload;\nmsg.payload = [];\nfor (let i = 0; i < 20; i++) {\n    msg.payload.push(nada);\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nlet modo_estandar = \"estandar\";\nmodos = [];\nfor (let i = 0; i < 20; i++) {\n    modos.push(modo_estandar);\n}\n\nflow.set(\"modo_lector\", modos);",
+        "finalize": "// Code added here will be run when the\n// node is being stopped or re-deployed.\nlet modo_estandar = \"estandar\";\nmodos = [];\nfor (let i = 0; i < 20; i++) {\n    modos.push(modo_estandar);\n}\n\nflow.set(\"modo_lector\", modos);",
+        "libs": [],
+        "x": 400,
+        "y": 1540,
+        "wires": [
+            [
+                "3213b0bf68fa7af2"
+            ]
+        ]
+    },
+    {
+        "id": "3213b0bf68fa7af2",
+        "type": "change",
+        "z": "303f649a904520e9",
+        "name": "Guardar array de ultima_tarjeta",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ultima_tarjeta",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 710,
+        "y": 1540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f6d5527dd7648a9e",
+        "type": "inject",
+        "z": "303f649a904520e9",
+        "name": "Mostrar array de ultima_tarjeta",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "ultima_tarjeta",
+        "payloadType": "flow",
+        "x": 230,
+        "y": 1640,
+        "wires": [
+            [
+                "b48efc9973ff4629"
+            ]
+        ]
+    },
+    {
+        "id": "b48efc9973ff4629",
+        "type": "debug",
+        "z": "303f649a904520e9",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 490,
+        "y": 1640,
+        "wires": []
+    },
+    {
+        "id": "c6a923e29372b892",
+        "type": "comment",
+        "z": "303f649a904520e9",
+        "name": "Resetear array últimas tarjetas",
+        "info": "",
+        "x": 210,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "7ee0c4a71818d67e",
+        "type": "function",
+        "z": "303f649a904520e9",
+        "name": "Guardar id_tarjeta en ultima_tarjeta",
+        "func": "ultima_tarjeta = flow.get(\"ultima_tarjeta\");\nultima_tarjeta[msg.puerta] = msg.id_tarjeta;\nflow.set(\"ultima_tarjeta\", ultima_tarjeta);",
+        "outputs": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1380,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "e64e0059960919a3",
+        "type": "function",
+        "z": "303f649a904520e9",
+        "name": "¿Se ha vuelto a pasar la misma tarjeta?",
+        "func": "ultima_tarjeta = flow.get(\"ultima_tarjeta\");\nif(msg.id_tarjeta == ultima_tarjeta[msg.puerta]) {\n    return [null, msg];\n} else {\n    return [msg, null];\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1500,
+        "y": 580,
+        "wires": [
+            [
+                "168639afa58f2475",
+                "0e84a609da261e1a",
+                "239864f54ea3a75a"
+            ],
+            [
+                "5435e33986908885",
+                "9cf25ad5b9ebc783",
+                "2339b0735014acce",
+                "5e6007a0bb0f08ec",
+                "e5068f60b9db1984"
+            ]
+        ]
+    },
+    {
+        "id": "b09f1c5330a020f9",
+        "type": "comment",
+        "z": "303f649a904520e9",
+        "name": "No",
+        "info": "",
+        "x": 1610,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "c82606f4f1f2254a",
+        "type": "comment",
+        "z": "303f649a904520e9",
+        "name": "Sí",
+        "info": "",
+        "x": 1610,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "5926b2b35ded29a2",
+        "type": "function",
+        "z": "303f649a904520e9",
+        "name": "Cambiar a modo \"estandar\"",
+        "func": "modos = flow.get(\"modo_lector\");\nmodos[msg.puerta] = \"estandar\";\nflow.set(\"modo_lector\", modos);",
+        "outputs": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2400,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "5435e33986908885",
+        "type": "function",
+        "z": "303f649a904520e9",
+        "name": "Cambiar a modo \"espera_tarjeta\"",
+        "func": "modos = flow.get(\"modo_lector\");\nmodos[msg.puerta] = \"espera_tarjeta\";\nflow.set(\"modo_lector\", modos);",
+        "outputs": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1900,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "9cf25ad5b9ebc783",
+        "type": "function",
+        "z": "303f649a904520e9",
+        "name": "Poner lector en modo espera_tarjeta",
+        "func": "// El led rojo se enciende durante 3 segundos y la puerta no se abre\n// Estructura del mensaje:\n// {id_puerta, tiempo_led_rojo_ms, parpadeo_led_rojo, tiempo_led_verde_ms, parpadeo_led_verde, acceso}\nmsg.payload = msg.puerta + \" 10000 1 10000 1 0\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1910,
+        "y": 680,
+        "wires": [
+            [
+                "9333ecdbeef31668"
+            ]
+        ]
+    },
+    {
+        "id": "9333ecdbeef31668",
+        "type": "serial out",
+        "z": "303f649a904520e9",
+        "name": "Enviar a Placa Serial",
+        "serial": "f0d09c4eeddaf457",
+        "x": 2220,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "2339b0735014acce",
+        "type": "delay",
+        "z": "303f649a904520e9",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "10",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1820,
+        "y": 640,
+        "wires": [
+            [
+                "aec6f85f0cd6e048"
+            ]
+        ]
+    },
+    {
+        "id": "aec6f85f0cd6e048",
+        "type": "function",
+        "z": "303f649a904520e9",
+        "name": "Volver a estandar si se sigue en \"espera_tarjeta\"",
+        "func": "modos = flow.get(\"modo_lector\");\nif (modos[msg.puerta] == \"espera_tarjeta\") {\n    modos[msg.puerta] = \"estandar\";\n    flow.set(\"modo_lector\", modos);\n    return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2120,
+        "y": 640,
+        "wires": [
+            [
+                "d669bf6344105e00"
+            ]
+        ]
+    },
+    {
+        "id": "91e5fe8305ce2285",
+        "type": "function",
+        "z": "303f649a904520e9",
+        "name": "¿Se ha vuelto a pasar la misma tarjeta?",
+        "func": "ultima_tarjeta = flow.get(\"ultima_tarjeta\");\nif(msg.id_tarjeta == ultima_tarjeta[msg.puerta]) {\n    return [msg, null];\n} else {\n    return [null, msg];\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1500,
+        "y": 980,
+        "wires": [
+            [
+                "8b6c6026e5b68997",
+                "1a2a8c222c82a77f",
+                "48d12a28929e4422",
+                "0b5756ba406254a3"
+            ],
+            [
+                "473f99e47794fb89",
+                "45c1cc27e4bbea90"
+            ]
+        ]
+    },
+    {
+        "id": "e0dbbdeed323b503",
+        "type": "comment",
+        "z": "303f649a904520e9",
+        "name": "No",
+        "info": "",
+        "x": 1610,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "2453092343c1a177",
+        "type": "comment",
+        "z": "303f649a904520e9",
+        "name": "Sí",
+        "info": "",
+        "x": 1610,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "1a2a8c222c82a77f",
+        "type": "function",
+        "z": "303f649a904520e9",
+        "name": "Cambiar a modo \"estandar\"",
+        "func": "modos = flow.get(\"modo_lector\");\nmodos[msg.puerta] = \"estandar\";\nflow.set(\"modo_lector\", modos);",
+        "outputs": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1880,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "8b6c6026e5b68997",
+        "type": "function",
+        "z": "303f649a904520e9",
+        "name": "Poner lector en modo estandar",
+        "func": "// El led rojo se enciende durante 3 segundos y la puerta no se abre\n// Estructura del mensaje:\n// {id_puerta, tiempo_led_rojo_ms, parpadeo_led_rojo, tiempo_led_verde_ms, parpadeo_led_verde, acceso}\nmsg.payload = msg.puerta + \" 0 0 0 0 0\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1890,
+        "y": 900,
+        "wires": [
+            [
+                "1f9a6459a52d3624"
+            ]
+        ]
+    },
+    {
+        "id": "1f9a6459a52d3624",
+        "type": "serial out",
+        "z": "303f649a904520e9",
+        "name": "Enviar a Placa Serial",
+        "serial": "f0d09c4eeddaf457",
+        "x": 2160,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "5600b5a82c5f14bf",
+        "type": "link in",
+        "z": "303f649a904520e9",
+        "name": "",
+        "links": [
+            "4553ae7d4a0c7b01"
+        ],
+        "x": 1805,
+        "y": 1100,
+        "wires": [
+            [
+                "d94ba5436661cb29"
+            ]
+        ]
+    },
+    {
+        "id": "d94ba5436661cb29",
+        "type": "switch",
+        "z": "303f649a904520e9",
+        "name": "¿El id_tarjeta está registrado en la base de datos?",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "empty"
+            },
+            {
+                "t": "nempty"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 2040,
+        "y": 1100,
+        "wires": [
+            [
+                "28e672903d6e66dd",
+                "346e4e26deea013c",
+                "4acf61158caac0ee",
+                "76b130b9201f15e2",
+                "161e9bc57636c47d"
+            ],
+            [
+                "36d6f0aa845d6359",
+                "a12b6fa5b1ea6261",
+                "b6b4706e9bf0f95e",
+                "96a808fd06878e21",
+                "2acdc8150d273551"
+            ]
+        ]
+    },
+    {
+        "id": "eff381806ed63c4c",
+        "type": "comment",
+        "z": "303f649a904520e9",
+        "name": "Sí",
+        "info": "",
+        "x": 2180,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "5f8368718f07131c",
+        "type": "comment",
+        "z": "303f649a904520e9",
+        "name": "No",
+        "info": "",
+        "x": 2180,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "f420584072fdaa13",
+        "type": "comment",
+        "z": "303f649a904520e9",
+        "name": "Consultar DB",
+        "info": "",
+        "x": 1780,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "28e672903d6e66dd",
+        "type": "link out",
+        "z": "303f649a904520e9",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "736f95dc089e473f"
+        ],
+        "x": 2395,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "b07b615568b5200d",
+        "type": "comment",
+        "z": "303f649a904520e9",
+        "name": "La tarjeta se registra en la base de datos",
+        "info": "",
+        "x": 2600,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "346e4e26deea013c",
+        "type": "function",
+        "z": "303f649a904520e9",
+        "name": "Cambiar a modo \"estandar\"",
+        "func": "modos = flow.get(\"modo_lector\");\nmodos[msg.puerta] = \"estandar\";\nflow.set(\"modo_lector\", modos);",
+        "outputs": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2500,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "4acf61158caac0ee",
+        "type": "function",
+        "z": "303f649a904520e9",
+        "name": "Poner lector en modo confirmación de tarjeta añadida",
+        "func": "// Estructura del mensaje:\n// {id_puerta, tiempo_led_rojo_ms, parpadeo_led_rojo, tiempo_led_verde_ms, parpadeo_led_verde, acceso}\nmsg.payload = msg.puerta + \" 0 0 1500 1 0\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2580,
+        "y": 1040,
+        "wires": [
+            [
+                "03c57b38b844c042"
+            ]
+        ]
+    },
+    {
+        "id": "03c57b38b844c042",
+        "type": "serial out",
+        "z": "303f649a904520e9",
+        "name": "Enviar a Placa Serial",
+        "serial": "f0d09c4eeddaf457",
+        "x": 2920,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "069db1e9c27ca324",
+        "type": "link out",
+        "z": "303f649a904520e9",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "a529c7f12b4bef43"
+        ],
+        "x": 2695,
+        "y": 1920,
+        "wires": []
+    },
+    {
+        "id": "2af637fa44705f2e",
+        "type": "comment",
+        "z": "303f649a904520e9",
+        "name": "El usuario de la tarjeta anterior se borra de la base de datos",
+        "info": "",
+        "x": 2940,
+        "y": 1920,
+        "wires": []
+    },
+    {
+        "id": "b6b4706e9bf0f95e",
+        "type": "function",
+        "z": "303f649a904520e9",
+        "name": "Cambiar a modo \"confirma_borrar\"",
+        "func": "modos = flow.get(\"modo_lector\");\nmodos[msg.puerta] = \"confirma_borrar\";\nflow.set(\"modo_lector\", modos);",
+        "outputs": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2520,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "36d6f0aa845d6359",
+        "type": "function",
+        "z": "303f649a904520e9",
+        "name": "Poner lector en modo confirma_borrar pt.1",
+        "func": "// Estructura del mensaje:\n// {id_puerta, tiempo_led_rojo_ms, parpadeo_led_rojo, tiempo_led_verde_ms, parpadeo_led_verde, acceso}\nmsg.payload = msg.puerta + \" 1500 1 0 0 0\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2550,
+        "y": 1240,
+        "wires": [
+            [
+                "c28b831c1897bf94"
+            ]
+        ]
+    },
+    {
+        "id": "f9a0cf705d6c7797",
+        "type": "function",
+        "z": "303f649a904520e9",
+        "name": "Poner lector en modo confirma_borrar pt.2",
+        "func": "// Estructura del mensaje:\n// {id_puerta, tiempo_led_rojo_ms, parpadeo_led_rojo, tiempo_led_verde_ms, parpadeo_led_verde, acceso}\nmsg.payload = msg.puerta + \" 8500 1 8500 1 0\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2550,
+        "y": 1280,
+        "wires": [
+            [
+                "c28b831c1897bf94"
+            ]
+        ]
+    },
+    {
+        "id": "c28b831c1897bf94",
+        "type": "serial out",
+        "z": "303f649a904520e9",
+        "name": "Enviar a Placa Serial",
+        "serial": "f0d09c4eeddaf457",
+        "x": 2860,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "a12b6fa5b1ea6261",
+        "type": "delay",
+        "z": "303f649a904520e9",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1500",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2280,
+        "y": 1260,
+        "wires": [
+            [
+                "f9a0cf705d6c7797"
+            ]
+        ]
+    },
+    {
+        "id": "dc32161981ed446a",
+        "type": "link out",
+        "z": "303f649a904520e9",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "c72eaccb9165a81e"
+        ],
+        "x": 1345,
+        "y": 1620,
+        "wires": []
+    },
+    {
+        "id": "faf52d0c8d2de0f7",
+        "type": "link in",
+        "z": "303f649a904520e9",
+        "name": "",
+        "links": [
+            "0decd3b121591827"
+        ],
+        "x": 1395,
+        "y": 1620,
+        "wires": [
+            [
+                "a1f4ba75e490deb2"
+            ]
+        ]
+    },
+    {
+        "id": "a1f4ba75e490deb2",
+        "type": "switch",
+        "z": "303f649a904520e9",
+        "name": "¿El id_tarjeta está registrado en la base de datos?",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "empty"
+            },
+            {
+                "t": "nempty"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1630,
+        "y": 1620,
+        "wires": [
+            [
+                "37114ec3783d3e95",
+                "cf3a4e71a1e3a4af",
+                "f9812bbb14b6c72c"
+            ],
+            [
+                "aa9bf9bf123cc81e",
+                "f9dd24f481ebaf7b"
+            ]
+        ]
+    },
+    {
+        "id": "d1f2db6ee8e52add",
+        "type": "comment",
+        "z": "303f649a904520e9",
+        "name": "Sí",
+        "info": "",
+        "x": 1770,
+        "y": 1660,
+        "wires": []
+    },
+    {
+        "id": "399709989b20e962",
+        "type": "comment",
+        "z": "303f649a904520e9",
+        "name": "No",
+        "info": "",
+        "x": 1770,
+        "y": 1580,
+        "wires": []
+    },
+    {
+        "id": "aa9bf9bf123cc81e",
+        "type": "switch",
+        "z": "303f649a904520e9",
+        "name": "¿Tiene permisos de administrador?",
+        "property": "payload[0].admin",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "false"
+            },
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 2020,
+        "y": 1800,
+        "wires": [
+            [
+                "37114ec3783d3e95",
+                "cf3a4e71a1e3a4af",
+                "0684d95ccc740456"
+            ],
+            [
+                "00acb28b03c688eb",
+                "37114ec3783d3e95",
+                "49d37cd228c5f1f7",
+                "974a38440cb2f43c"
+            ]
+        ]
+    },
+    {
+        "id": "5e5806a2e914b1e1",
+        "type": "comment",
+        "z": "303f649a904520e9",
+        "name": "No",
+        "info": "",
+        "x": 2110,
+        "y": 1760,
+        "wires": []
+    },
+    {
+        "id": "7fb1ab1fdcd77bcb",
+        "type": "comment",
+        "z": "303f649a904520e9",
+        "name": "Sí",
+        "info": "",
+        "x": 2110,
+        "y": 1840,
+        "wires": []
+    },
+    {
+        "id": "21561b0d4065ef67",
+        "type": "comment",
+        "z": "303f649a904520e9",
+        "name": "Consultar DB",
+        "info": "",
+        "x": 1370,
+        "y": 1580,
+        "wires": []
+    },
+    {
+        "id": "37114ec3783d3e95",
+        "type": "function",
+        "z": "303f649a904520e9",
+        "name": "Cambiar a modo \"estandar\"",
+        "func": "modos = flow.get(\"modo_lector\");\nmodos[msg.puerta] = \"estandar\";\nflow.set(\"modo_lector\", modos);",
+        "outputs": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2500,
+        "y": 1560,
+        "wires": []
+    },
+    {
+        "id": "cf3a4e71a1e3a4af",
+        "type": "function",
+        "z": "303f649a904520e9",
+        "name": "Poner lector en modo estandar",
+        "func": "// El led rojo se enciende durante 3 segundos y la puerta no se abre\n// Estructura del mensaje:\n// {id_puerta, tiempo_led_rojo_ms, parpadeo_led_rojo, tiempo_led_verde_ms, parpadeo_led_verde, acceso}\nmsg.payload = msg.puerta + \" 0 0 0 0 0\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2510,
+        "y": 1520,
+        "wires": [
+            [
+                "13fce229b5743a15"
+            ]
+        ]
+    },
+    {
+        "id": "13fce229b5743a15",
+        "type": "serial out",
+        "z": "303f649a904520e9",
+        "name": "Enviar a Placa Serial",
+        "serial": "f0d09c4eeddaf457",
+        "x": 2780,
+        "y": 1520,
+        "wires": []
+    },
+    {
+        "id": "00acb28b03c688eb",
+        "type": "function",
+        "z": "303f649a904520e9",
+        "name": "Poner lector en modo confirmación de tarjeta borrada",
+        "func": "// Estructura del mensaje:\n// {id_puerta, tiempo_led_rojo_ms, parpadeo_led_rojo, tiempo_led_verde_ms, parpadeo_led_verde, acceso}\nmsg.payload = msg.puerta + \" 1000 1 0 0 0\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2580,
+        "y": 1880,
+        "wires": [
+            [
+                "5afabb9df18bf40f"
+            ]
+        ]
+    },
+    {
+        "id": "5afabb9df18bf40f",
+        "type": "serial out",
+        "z": "303f649a904520e9",
+        "name": "Enviar a Placa Serial",
+        "serial": "f0d09c4eeddaf457",
+        "x": 2940,
+        "y": 1880,
+        "wires": []
+    },
+    {
+        "id": "49d37cd228c5f1f7",
+        "type": "function",
+        "z": "303f649a904520e9",
+        "name": "Recuperar ultima_tarjeta",
+        "func": "ultima_tarjeta = flow.get(\"ultima_tarjeta\");\nmsg.id_tarjeta = ultima_tarjeta[msg.puerta];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2490,
+        "y": 1920,
+        "wires": [
+            [
+                "069db1e9c27ca324",
+                "501470a95066f224"
+            ]
+        ]
+    },
+    {
+        "id": "711173cb04963111",
+        "type": "debug",
+        "z": "303f649a904520e9",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "2c61263c89a640a4",
+        "type": "debug",
+        "z": "303f649a904520e9",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1270,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "4f710e76dd29720a",
+        "type": "debug",
+        "z": "303f649a904520e9",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1570,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "b39c0831022ef12c",
+        "type": "debug",
+        "z": "303f649a904520e9",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1750,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "a165466a71c17a07",
+        "type": "debug",
+        "z": "303f649a904520e9",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1970,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "7649a2a142fc7b2e",
+        "type": "debug",
+        "z": "303f649a904520e9",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2290,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "f2ebdfd9e88a7b83",
+        "type": "debug",
+        "z": "303f649a904520e9",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2350,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "38c5735fc566a9e1",
+        "type": "debug",
+        "z": "303f649a904520e9",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1230,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "0e84a609da261e1a",
+        "type": "debug",
+        "z": "303f649a904520e9",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1810,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "5e6007a0bb0f08ec",
+        "type": "debug",
+        "z": "303f649a904520e9",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1810,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "73e1f742775cdf22",
+        "type": "function",
+        "z": "303f649a904520e9",
+        "name": "Borrar id_tarjeta de ultima_tarjeta",
+        "func": "ultima_tarjeta = flow.get(\"ultima_tarjeta\");\nultima_tarjeta[msg.puerta] = \"\";\nflow.set(\"ultima_tarjeta\", ultima_tarjeta);",
+        "outputs": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2420,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "239864f54ea3a75a",
+        "type": "function",
+        "z": "303f649a904520e9",
+        "name": "Borrar id_tarjeta de ultima_tarjeta",
+        "func": "ultima_tarjeta = flow.get(\"ultima_tarjeta\");\nultima_tarjeta[msg.puerta] = \"\";\nflow.set(\"ultima_tarjeta\", ultima_tarjeta);",
+        "outputs": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1900,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "48d12a28929e4422",
+        "type": "function",
+        "z": "303f649a904520e9",
+        "name": "Borrar id_tarjeta de ultima_tarjeta",
+        "func": "ultima_tarjeta = flow.get(\"ultima_tarjeta\");\nultima_tarjeta[msg.puerta] = \"\";\nflow.set(\"ultima_tarjeta\", ultima_tarjeta);",
+        "outputs": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1900,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "76b130b9201f15e2",
+        "type": "function",
+        "z": "303f649a904520e9",
+        "name": "Borrar id_tarjeta de ultima_tarjeta",
+        "func": "ultima_tarjeta = flow.get(\"ultima_tarjeta\");\nultima_tarjeta[msg.puerta] = \"\";\nflow.set(\"ultima_tarjeta\", ultima_tarjeta);",
+        "outputs": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2520,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "7429f937ce7ba2f7",
+        "type": "debug",
+        "z": "303f649a904520e9",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1230,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "77d89cbc878e237a",
+        "type": "debug",
+        "z": "303f649a904520e9",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1190,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "0b5756ba406254a3",
+        "type": "debug",
+        "z": "303f649a904520e9",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1830,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "473f99e47794fb89",
+        "type": "debug",
+        "z": "303f649a904520e9",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1830,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "161e9bc57636c47d",
+        "type": "debug",
+        "z": "303f649a904520e9",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2430,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "96a808fd06878e21",
+        "type": "debug",
+        "z": "303f649a904520e9",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2430,
+        "y": 1320,
+        "wires": []
+    },
+    {
+        "id": "f9812bbb14b6c72c",
+        "type": "debug",
+        "z": "303f649a904520e9",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1930,
+        "y": 1560,
+        "wires": []
+    },
+    {
+        "id": "f9dd24f481ebaf7b",
+        "type": "debug",
+        "z": "303f649a904520e9",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1930,
+        "y": 1660,
+        "wires": []
+    },
+    {
+        "id": "0684d95ccc740456",
+        "type": "debug",
+        "z": "303f649a904520e9",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2330,
+        "y": 1700,
+        "wires": []
+    },
+    {
+        "id": "974a38440cb2f43c",
+        "type": "debug",
+        "z": "303f649a904520e9",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2370,
+        "y": 1840,
+        "wires": []
+    },
+    {
+        "id": "45c1cc27e4bbea90",
+        "type": "link out",
+        "z": "303f649a904520e9",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "84cbbd42e3ad47c6"
+        ],
+        "x": 1745,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "6c4347722a11bd0d",
+        "type": "function",
+        "z": "303f649a904520e9",
+        "name": "Borrar id_tarjeta de ultima_tarjeta",
+        "func": "ultima_tarjeta = flow.get(\"ultima_tarjeta\");\nultima_tarjeta[msg.puerta] = \"\";\nflow.set(\"ultima_tarjeta\", ultima_tarjeta);",
+        "outputs": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2960,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "e5068f60b9db1984",
+        "type": "function",
+        "z": "303f649a904520e9",
+        "name": "Guardar id_tarjeta en ultima_tarjeta",
+        "func": "ultima_tarjeta = flow.get(\"ultima_tarjeta\");\nultima_tarjeta[msg.puerta] = msg.id_tarjeta;\nflow.set(\"ultima_tarjeta\", ultima_tarjeta);",
+        "outputs": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1900,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "d669bf6344105e00",
+        "type": "function",
+        "z": "303f649a904520e9",
+        "name": "Borrar id_tarjeta de ultima_tarjeta",
+        "func": "ultima_tarjeta = flow.get(\"ultima_tarjeta\");\nultima_tarjeta[msg.puerta] = \"\";\nflow.set(\"ultima_tarjeta\", ultima_tarjeta);",
+        "outputs": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2460,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "2acdc8150d273551",
+        "type": "function",
+        "z": "303f649a904520e9",
+        "name": "Guardar id_tarjeta en ultima_tarjeta",
+        "func": "ultima_tarjeta = flow.get(\"ultima_tarjeta\");\nultima_tarjeta[msg.puerta] = msg.id_tarjeta;\nflow.set(\"ultima_tarjeta\", ultima_tarjeta);",
+        "outputs": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2520,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "501470a95066f224",
+        "type": "function",
+        "z": "303f649a904520e9",
+        "name": "Borrar id_tarjeta de ultima_tarjeta",
+        "func": "ultima_tarjeta = flow.get(\"ultima_tarjeta\");\nultima_tarjeta[msg.puerta] = \"\";\nflow.set(\"ultima_tarjeta\", ultima_tarjeta);",
+        "outputs": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2820,
+        "y": 1960,
+        "wires": []
+    },
+    {
+        "id": "b7aa3105cf74d830",
+        "type": "ui_form",
+        "z": "9367d904c92519d6",
+        "name": "Formulario de creación de usuario",
+        "label": "",
+        "group": "3b42f88e5dffd699",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "options": [
+            {
+                "label": "Nombre",
+                "value": "nombre",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Id de la tarjeta",
+                "value": "id_tarjeta",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Administrador",
+                "value": "admin",
+                "type": "switch",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "nombre": "",
+            "id_tarjeta": "",
+            "admin": false
+        },
+        "payload": "",
+        "submit": "Crear usuario",
+        "cancel": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 200,
+        "y": 160,
+        "wires": [
+            [
+                "4a1e97294c8d8a07",
+                "6f9d95e1606cceee"
+            ]
+        ]
+    },
+    {
+        "id": "4a1e97294c8d8a07",
+        "type": "function",
+        "z": "9367d904c92519d6",
+        "name": "formatear id de tarjeta",
+        "func": "msg.payload.id_tarjeta = msg.payload.id_tarjeta.toLowerCase();\n\nlet patron = /[0-9a-f][0-9a-f]:[0-9a-f][0-9a-f]:[0-9a-f][0-9a-f]:[0-9a-f][0-9a-f]/;\n\nif (patron.test(msg.payload.id_tarjeta)) {\n    msg.confirmacion = \"\"\n    return [msg,null];\n} else {\n    msg.confirmacion = \"El formato del id de tarjeta introducido es incorrecto. Pruebe de nuevo.\"\n    return [null,msg];\n}\n\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 160,
+        "wires": [
+            [
+                "255a12cfb161e253",
+                "254ae9ddfbba460d"
+            ],
+            [
+                "254ae9ddfbba460d"
+            ]
+        ]
+    },
+    {
+        "id": "255a12cfb161e253",
+        "type": "link out",
+        "z": "9367d904c92519d6",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "1ef5a2e54f79e839",
+            "06d42a27420e6f86"
+        ],
+        "x": 735,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "254ae9ddfbba460d",
+        "type": "ui_text",
+        "z": "9367d904c92519d6",
+        "group": "3b42f88e5dffd699",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Confirmación de usuario añadido",
+        "label": "",
+        "format": "{{msg.confirmacion}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 840,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "c5a8035c009f42e1",
+        "type": "ui_form",
+        "z": "9367d904c92519d6",
+        "name": "Filtrar búsqueda",
+        "label": "",
+        "group": "ee24240c1fb6fcac",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Nombre",
+                "value": "nombre",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Id de tarjeta",
+                "value": "id_tarjeta",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Puerta",
+                "value": "puerta",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Mostrar sólo accesos denegados",
+                "value": "acceso_denegado",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Mostrar sólo accesos de administrador",
+                "value": "solo_admin",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Fecha desde la que mostrar resultados",
+                "value": "fecha_inicio",
+                "type": "date",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Hora desde la que mostrar resultados",
+                "value": "hora_inicio",
+                "type": "time",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Fecha hasta la que mostrar resultados",
+                "value": "fecha_fin",
+                "type": "date",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Hora hasta la que mostrar resultados",
+                "value": "hora_fin",
+                "type": "time",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "nombre": "",
+            "id_tarjeta": "",
+            "puerta": "",
+            "acceso_denegado": false,
+            "solo_admin": false,
+            "fecha_inicio": "",
+            "hora_inicio": "",
+            "fecha_fin": "",
+            "hora_fin": ""
+        },
+        "payload": "",
+        "submit": "Mostrar resultados",
+        "cancel": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": false,
+        "className": "",
+        "x": 120,
+        "y": 660,
+        "wires": [
+            [
+                "3d3b377b05e954c7"
+            ]
+        ]
+    },
+    {
+        "id": "70b5e40cbc241b31",
+        "type": "template",
+        "z": "9367d904c92519d6",
+        "name": "lista en formato html",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": " <ul>\n{{#payload}}\n<dl>  \n<dt>   \n    <dd> <b>Nombre:</b> {{nombre}}\n    <dd> <b>Id de la tarjeta:</b> {{id_tarjeta}}\n    <dd> <b>Fecha y hora:</b> {{fecha}}\n    <dd> <b>Número de puerta:</b> {{puerta}}\n    <dd> <b>Acceso:</b> {{acceso}}\n    <dd> <b>Permisos de administrador:</b> {{admin}}\n    <hr>\n<dt>\n{{/payload}}\n </ul>",
+        "output": "str",
+        "x": 840,
+        "y": 660,
+        "wires": [
+            [
+                "34d185f65e0bf0e7"
+            ]
+        ]
+    },
+    {
+        "id": "34d185f65e0bf0e7",
+        "type": "ui_template",
+        "z": "9367d904c92519d6",
+        "group": "f7e2cc2af4e3d2ce",
+        "name": "Intentos de acceso",
+        "order": 2,
+        "width": "10",
+        "height": "11",
+        "format": "<div ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 1070,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3d3b377b05e954c7",
+        "type": "link out",
+        "z": "9367d904c92519d6",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "a03faf90194c3b43"
+        ],
+        "x": 275,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "22376022a2dd5407",
+        "type": "link in",
+        "z": "9367d904c92519d6",
+        "name": "",
+        "links": [
+            "abe72e7fbe36f26c"
+        ],
+        "x": 395,
+        "y": 600,
+        "wires": [
+            [
+                "ee735df46fa6e174"
+            ]
+        ]
+    },
+    {
+        "id": "ee735df46fa6e174",
+        "type": "function",
+        "z": "9367d904c92519d6",
+        "name": "Formatear resultados",
+        "func": "let patron_fecha = /[0-9]{4}-[0-9]{2}-[0-9]{2}/;\nlet patron_hora = /[0-9]{2}:[0-9]{2}:[0-9]{2}/;\n\nfor (var payload of msg.payload) {\n\n\n    let fecha = patron_fecha.exec(\n                        payload.fecha)[0].split(\"-\");\n                        \n    let hora = patron_hora.exec(\n                    payload.fecha)[0].split(\":\");\n\n\n    payload.fecha = (fecha[2]+\n                     \"/\"+(fecha[1])+\n                     \"/\"+fecha[0]+\n                     \" \"+hora[0]+\n                     \":\"+hora[1]+\n                     \":\"+hora[2]);\n                         \n    if (payload.acceso) {\n        payload.acceso = \"Permitido\";\n    } else {\n        payload.acceso = \"Denegado\";\n    }\n    \n    if (payload.admin) {\n        payload.admin = \"Sí\";\n    } else {\n        payload.admin = \"No\";\n    }\n\n}\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 660,
+        "wires": [
+            [
+                "70b5e40cbc241b31"
+            ]
+        ]
+    },
+    {
+        "id": "b39f74315b8d157e",
+        "type": "comment",
+        "z": "9367d904c92519d6",
+        "name": "Visualización de accesos",
+        "info": "",
+        "x": 150,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "5b0f6cdb7b9b6bce",
+        "type": "ui_form",
+        "z": "9367d904c92519d6",
+        "name": "Formulario para borrar usuario",
+        "label": "",
+        "group": "d6985e1a7fc8f2d3",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "options": [
+            {
+                "label": "Nombre",
+                "value": "nombre",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "nombre": ""
+        },
+        "payload": "",
+        "submit": "Borrar usuario",
+        "cancel": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 190,
+        "y": 360,
+        "wires": [
+            [
+                "85db6b9a292c4928",
+                "54dc201c885152bd"
+            ]
+        ]
+    },
+    {
+        "id": "e4bf8700c40f885b",
+        "type": "template",
+        "z": "9367d904c92519d6",
+        "name": "lista en formato html",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": " <ul>\n{{#payload}}\n<dl>  \n<dt>   \n    <dd> <b>Nombre:</b> {{nombre}}\n    <dd> <b>Id de la tarjeta:</b> {{id_tarjeta}}\n    <dd> <b>Permisos de administrador:</b> {{admin}}\n    <dd> <b>Fecha de creación:</b> {{fecha_creado}}\n    <hr>\n<dt>\n{{/payload}}\n </ul>",
+        "output": "str",
+        "x": 1060,
+        "y": 260,
+        "wires": [
+            [
+                "cc87b953669fbf8a"
+            ]
+        ]
+    },
+    {
+        "id": "cc87b953669fbf8a",
+        "type": "ui_template",
+        "z": "9367d904c92519d6",
+        "group": "47f6b2b6c0a2a7ac",
+        "name": "Usuarios registrados",
+        "order": 2,
+        "width": "10",
+        "height": "12",
+        "format": "<div ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 1300,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c6775ec671a12592",
+        "type": "link out",
+        "z": "9367d904c92519d6",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "9889df08bca046e8"
+        ],
+        "x": 545,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "81727de925788720",
+        "type": "link in",
+        "z": "9367d904c92519d6",
+        "name": "",
+        "links": [
+            "bb93424b3fef2cd0"
+        ],
+        "x": 635,
+        "y": 240,
+        "wires": [
+            [
+                "d320b3d977b06ccc"
+            ]
+        ]
+    },
+    {
+        "id": "85db6b9a292c4928",
+        "type": "link out",
+        "z": "9367d904c92519d6",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "55e0f1f5ee651572"
+        ],
+        "x": 405,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "54dc201c885152bd",
+        "type": "change",
+        "z": "9367d904c92519d6",
+        "name": "{}",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 450,
+        "y": 260,
+        "wires": [
+            [
+                "c6775ec671a12592"
+            ]
+        ]
+    },
+    {
+        "id": "6f9d95e1606cceee",
+        "type": "delay",
+        "z": "9367d904c92519d6",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "10",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 310,
+        "y": 220,
+        "wires": [
+            [
+                "54dc201c885152bd"
+            ]
+        ]
+    },
+    {
+        "id": "8e0668212cb7f840",
+        "type": "comment",
+        "z": "9367d904c92519d6",
+        "name": "Administrar usuarios",
+        "info": "",
+        "x": 150,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "210d0bb7e1cbd825",
+        "type": "inject",
+        "z": "9367d904c92519d6",
+        "name": "Refrescar al iniciar el programa",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 260,
+        "wires": [
+            [
+                "54dc201c885152bd"
+            ]
+        ]
+    },
+    {
+        "id": "7ec59fc2986d0176",
+        "type": "link in",
+        "z": "9367d904c92519d6",
+        "name": "",
+        "links": [
+            "f86fbf74b3112a12",
+            "ac8aeb0809a2cb74"
+        ],
+        "x": 185,
+        "y": 220,
+        "wires": [
+            [
+                "6f9d95e1606cceee"
+            ]
+        ]
+    },
+    {
+        "id": "d320b3d977b06ccc",
+        "type": "function",
+        "z": "9367d904c92519d6",
+        "name": "Formatear resultados",
+        "func": "let patron_fecha = /[0-9]{4}-[0-9]{2}-[0-9]{2}/;\nlet patron_hora = /[0-9]{2}:[0-9]{2}:[0-9]{2}/;\n\nfor (var payload of msg.payload) {\n\n\n    let fecha = patron_fecha.exec(\n                        payload.fecha_creado)[0].split(\"-\");\n                        \n    let hora = patron_hora.exec(\n                    payload.fecha_creado)[0].split(\":\");\n\n\n    payload.fecha_creado = (fecha[2]+\n                     \"/\"+(fecha[1])+\n                     \"/\"+fecha[0]+\n                     \" \"+hora[0]+\n                     \":\"+hora[1]+\n                     \":\"+hora[2]);\n                         \n    \n    if (payload.admin) {\n        payload.admin = \"Sí\";\n    } else {\n        payload.admin = \"No\";\n    }\n\n}\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 260,
+        "wires": [
+            [
+                "e4bf8700c40f885b"
+            ]
+        ]
+    },
+    {
+        "id": "daa5b4b0e9e68cbe",
+        "type": "inject",
+        "z": "05ebb2dc1794c426",
+        "name": "Buscar usuario por nombre",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "b6:36:a5:1b",
+        "payloadType": "str",
+        "x": 170,
+        "y": 300,
+        "wires": [
+            [
+                "8ed52288adafe9a6"
+            ]
+        ]
+    },
+    {
+        "id": "0bc740cd9346975e",
+        "type": "debug",
+        "z": "05ebb2dc1794c426",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 850,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "76e98a4c025c6ba8",
+        "type": "inject",
+        "z": "05ebb2dc1794c426",
+        "name": "Generar usuario",
+        "props": [
+            {
+                "p": "payload.nombre",
+                "v": "Mario",
+                "vt": "str"
+            },
+            {
+                "p": "payload.id_tarjeta",
+                "v": "ac:12:bc:90",
+                "vt": "str"
+            },
+            {
+                "p": "payload.admin",
+                "v": "true",
+                "vt": "bool"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 140,
+        "y": 160,
+        "wires": [
+            [
+                "ab0fd301386f01b0"
+            ]
+        ]
+    },
+    {
+        "id": "ab0fd301386f01b0",
+        "type": "mongodb out",
+        "z": "05ebb2dc1794c426",
+        "mongodb": "6b0dbc3fe2272bf2",
+        "name": "Guardar usuario en DB",
+        "collection": "usuarios",
+        "payonly": true,
+        "upsert": false,
+        "multi": false,
+        "operation": "store",
+        "x": 610,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "252eba1b35c7017a",
+        "type": "mongodb in",
+        "z": "05ebb2dc1794c426",
+        "mongodb": "6b0dbc3fe2272bf2",
+        "name": "Buscar usuario por nombre",
+        "collection": "usuarios",
+        "operation": "find",
+        "x": 620,
+        "y": 300,
+        "wires": [
+            [
+                "0bc740cd9346975e"
+            ]
+        ]
+    },
+    {
+        "id": "08497fee542320fb",
+        "type": "inject",
+        "z": "05ebb2dc1794c426",
+        "name": "Borrar usuario por nombre",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 170,
+        "y": 480,
+        "wires": [
+            [
+                "f3a0c4d17cd54d68"
+            ]
+        ]
+    },
+    {
+        "id": "bae5e9b4f467aba1",
+        "type": "mongodb out",
+        "z": "05ebb2dc1794c426",
+        "mongodb": "6b0dbc3fe2272bf2",
+        "name": "Borrar usuario por nombre",
+        "collection": "usuarios",
+        "payonly": true,
+        "upsert": false,
+        "multi": false,
+        "operation": "delete",
+        "x": 620,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "f3a0c4d17cd54d68",
+        "type": "function",
+        "z": "05ebb2dc1794c426",
+        "name": "",
+        "func": "msg.payload = {\"nombre\" : msg.payload};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 480,
+        "wires": [
+            [
+                "bae5e9b4f467aba1"
+            ]
+        ]
+    },
+    {
+        "id": "50edf84c9d878739",
+        "type": "mongodb out",
+        "z": "05ebb2dc1794c426",
+        "mongodb": "6b0dbc3fe2272bf2",
+        "name": "Borrar todos los usuarios",
+        "collection": "usuarios",
+        "payonly": true,
+        "upsert": false,
+        "multi": false,
+        "operation": "delete",
+        "x": 610,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "6b0f19b7a017d84f",
+        "type": "inject",
+        "z": "05ebb2dc1794c426",
+        "name": "Borrar todos los usuarios",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{}",
+        "payloadType": "json",
+        "x": 170,
+        "y": 420,
+        "wires": [
+            [
+                "50edf84c9d878739"
+            ]
+        ]
+    },
+    {
+        "id": "d27ae121e92eefb2",
+        "type": "inject",
+        "z": "05ebb2dc1794c426",
+        "name": "Mostrar todos los usuarios",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{}",
+        "payloadType": "json",
+        "x": 170,
+        "y": 240,
+        "wires": [
+            [
+                "d958153ac6dc29ec"
+            ]
+        ]
+    },
+    {
+        "id": "d958153ac6dc29ec",
+        "type": "mongodb in",
+        "z": "05ebb2dc1794c426",
+        "mongodb": "6b0dbc3fe2272bf2",
+        "name": "Mostrar todos los usuarios",
+        "collection": "usuarios",
+        "operation": "aggregate",
+        "x": 620,
+        "y": 240,
+        "wires": [
+            [
+                "bb93424b3fef2cd0"
+            ]
+        ]
+    },
+    {
+        "id": "8ed52288adafe9a6",
+        "type": "function",
+        "z": "05ebb2dc1794c426",
+        "name": "",
+        "func": "msg.payload = {id_tarjeta : msg.payload};\nmsg.payload.type = typeof(msg.payload.id_tarjeta);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 300,
+        "wires": [
+            [
+                "252eba1b35c7017a",
+                "b5a69e75bc3d5b55"
+            ]
+        ]
+    },
+    {
+        "id": "1093fea8871dfb56",
+        "type": "mongodb in",
+        "z": "05ebb2dc1794c426",
+        "mongodb": "6b0dbc3fe2272bf2",
+        "name": "Obtener intentos de acceso filtrados",
+        "collection": "intentos_acceso",
+        "operation": "aggregate",
+        "x": 970,
+        "y": 860,
+        "wires": [
+            [
+                "abe72e7fbe36f26c"
+            ]
+        ]
+    },
+    {
+        "id": "a1027d2f07c6d0b6",
+        "type": "inject",
+        "z": "05ebb2dc1794c426",
+        "name": "Buscar acceso por id de tarjeta",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "ac:12:bc:90",
+        "payloadType": "str",
+        "x": 1250,
+        "y": 300,
+        "wires": [
+            [
+                "37d0cff7f8e923b7"
+            ]
+        ]
+    },
+    {
+        "id": "01b2eedb43d9e45f",
+        "type": "debug",
+        "z": "05ebb2dc1794c426",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2010,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "013617512be4873b",
+        "type": "inject",
+        "z": "05ebb2dc1794c426",
+        "name": "Generar intento de acceso",
+        "props": [
+            {
+                "p": "payload.nombre",
+                "v": "Pedro Gómez",
+                "vt": "str"
+            },
+            {
+                "p": "payload.id_tarjeta",
+                "v": "11:12:dd:25",
+                "vt": "str"
+            },
+            {
+                "p": "payload.fecha",
+                "v": "",
+                "vt": "date"
+            },
+            {
+                "p": "payload.puerta",
+                "v": "2",
+                "vt": "num"
+            },
+            {
+                "p": "payload.acceso",
+                "v": "true",
+                "vt": "bool"
+            },
+            {
+                "p": "payload.admin",
+                "v": "false",
+                "vt": "bool"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 1230,
+        "y": 160,
+        "wires": [
+            [
+                "64bad2e8c63bd3eb"
+            ]
+        ]
+    },
+    {
+        "id": "aa70520deee4fc3c",
+        "type": "mongodb out",
+        "z": "05ebb2dc1794c426",
+        "mongodb": "6b0dbc3fe2272bf2",
+        "name": "Guardar intento de acceso en DB",
+        "collection": "intentos_acceso",
+        "payonly": true,
+        "upsert": false,
+        "multi": false,
+        "operation": "store",
+        "x": 1860,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "0b2ce146a9ffcaef",
+        "type": "mongodb in",
+        "z": "05ebb2dc1794c426",
+        "mongodb": "6b0dbc3fe2272bf2",
+        "name": "Buscar intento de acceso por id de tarjeta",
+        "collection": "intentos_acceso",
+        "operation": "find",
+        "x": 1720,
+        "y": 300,
+        "wires": [
+            [
+                "01b2eedb43d9e45f"
+            ]
+        ]
+    },
+    {
+        "id": "98a9f3f49bab0a98",
+        "type": "inject",
+        "z": "05ebb2dc1794c426",
+        "name": "Borrar acceso por id de tarjeta",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "ac:12:bc:90",
+        "payloadType": "str",
+        "x": 1240,
+        "y": 500,
+        "wires": [
+            [
+                "268efaac3dc0a79d"
+            ]
+        ]
+    },
+    {
+        "id": "41aeb4f9f497714c",
+        "type": "mongodb out",
+        "z": "05ebb2dc1794c426",
+        "mongodb": "6b0dbc3fe2272bf2",
+        "name": "Borrar intento de acceso por id de tarjeta",
+        "collection": "intentos_acceso",
+        "payonly": true,
+        "upsert": false,
+        "multi": false,
+        "operation": "delete",
+        "x": 1720,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "268efaac3dc0a79d",
+        "type": "function",
+        "z": "05ebb2dc1794c426",
+        "name": "",
+        "func": "msg.payload = {\"id_tarjeta\" : msg.payload};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1460,
+        "y": 500,
+        "wires": [
+            [
+                "41aeb4f9f497714c"
+            ]
+        ]
+    },
+    {
+        "id": "9789a849c2aec991",
+        "type": "mongodb out",
+        "z": "05ebb2dc1794c426",
+        "mongodb": "6b0dbc3fe2272bf2",
+        "name": "Borrar todos los intentos de acceso",
+        "collection": "intentos_acceso",
+        "payonly": true,
+        "upsert": false,
+        "multi": false,
+        "operation": "delete",
+        "x": 1700,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "a2ff06a8afe8648f",
+        "type": "inject",
+        "z": "05ebb2dc1794c426",
+        "name": "Borrar todos los intentos de acceso",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{}",
+        "payloadType": "json",
+        "x": 1260,
+        "y": 420,
+        "wires": [
+            [
+                "9789a849c2aec991"
+            ]
+        ]
+    },
+    {
+        "id": "d3e1291c9a571183",
+        "type": "inject",
+        "z": "05ebb2dc1794c426",
+        "name": "Mostrar todos los intentos de acceso",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{}",
+        "payloadType": "json",
+        "x": 1260,
+        "y": 240,
+        "wires": [
+            [
+                "8e5092a1e5ecac60"
+            ]
+        ]
+    },
+    {
+        "id": "d5d965d6e1b15dc0",
+        "type": "debug",
+        "z": "05ebb2dc1794c426",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2010,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "8e5092a1e5ecac60",
+        "type": "mongodb in",
+        "z": "05ebb2dc1794c426",
+        "mongodb": "6b0dbc3fe2272bf2",
+        "name": "Mostrar todos los intentos de acceso",
+        "collection": "intentos_acceso",
+        "operation": "find",
+        "x": 1710,
+        "y": 240,
+        "wires": [
+            [
+                "d5d965d6e1b15dc0"
+            ]
+        ]
+    },
+    {
+        "id": "37d0cff7f8e923b7",
+        "type": "function",
+        "z": "05ebb2dc1794c426",
+        "name": "",
+        "func": "msg.payload = {\"id_tarjeta\" : msg.payload};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1460,
+        "y": 300,
+        "wires": [
+            [
+                "0b2ce146a9ffcaef"
+            ]
+        ]
+    },
+    {
+        "id": "225099700ee6528d",
+        "type": "comment",
+        "z": "05ebb2dc1794c426",
+        "name": "COLECCIÓN USUARIOS",
+        "info": "",
+        "x": 150,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "a338a4554c99a11a",
+        "type": "comment",
+        "z": "05ebb2dc1794c426",
+        "name": "COLECCIÓN INTENTOS_ACCESO",
+        "info": "",
+        "x": 1240,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "981e2bc96a604b6a",
+        "type": "function",
+        "z": "05ebb2dc1794c426",
+        "name": "Montar petición de agregación",
+        "func": "let filtros = [];\n\nif (msg.payload.nombre != \"\") {\n    filtros.push({$match : {nombre : msg.payload.nombre}})\n}\n\nif (msg.payload.id_tarjeta != \"\") {\n    filtros.push({$match : {id_tarjeta : msg.payload.id_tarjeta}})\n}\n\nif (msg.payload.puerta != null) {\n    filtros.push({$match : {puerta : msg.payload.puerta}})\n}\n\nif (msg.payload.acceso_denegado) {\n    filtros.push({$match : {acceso : false}});\n}\n\nif (msg.payload.solo_admin) {\n    filtros.push({$match : {admin : true}});\n}\n\nif (msg.payload.date_inicio != null) {\n    filtros.push({$match : {fecha : {$gte : msg.payload.date_inicio}}})\n}\n\nif (msg.payload.date_fin != null) {\n    filtros.push({$match : {fecha : {$lt : msg.payload.date_fin}}})\n}\n\n\nfiltros.push({$sort : {fecha : -1}}) // Ordenar salida por fecha\n\nmsg.payload = filtros;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 860,
+        "wires": [
+            [
+                "1093fea8871dfb56"
+            ]
+        ]
+    },
+    {
+        "id": "a03faf90194c3b43",
+        "type": "link in",
+        "z": "05ebb2dc1794c426",
+        "name": "",
+        "links": [
+            "3d3b377b05e954c7"
+        ],
+        "x": 145,
+        "y": 680,
+        "wires": [
+            [
+                "31979a374944a369"
+            ]
+        ]
+    },
+    {
+        "id": "abe72e7fbe36f26c",
+        "type": "link out",
+        "z": "05ebb2dc1794c426",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "22376022a2dd5407"
+        ],
+        "x": 1125,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "786d9494d8c846f6",
+        "type": "function",
+        "z": "05ebb2dc1794c426",
+        "name": "Extraer fechas",
+        "func": "let patron_fecha = /[0-9]{2}\\/[0-9]{2}\\/[0-9]{4}/;\nlet patron_hora = /[0-9]{2}:[0-9]{2}/;\n\nif (msg.payload.fecha_inicio != null) {\n    let fecha_inicio = patron_fecha.exec(\n                        msg.payload.fecha_inicio)[0].split(\"/\");\n                        \n    if (msg.payload.hora_inicio != null) {\n        let hora_inicio = patron_hora.exec(\n                        msg.payload.hora_inicio)[0].split(\":\");\n        \n        msg.payload.date_inicio = new Date(fecha_inicio[2],\n                              fecha_inicio[1]-1, fecha_inicio[0],\n                              hora_inicio[0], hora_inicio[1]);\n    } else {\n        msg.payload.date_inicio = new Date(fecha_inicio[2],\n                              fecha_inicio[1]-1, fecha_inicio[0]);\n    }\n    \n    var date_inicio = msg.payload.date_inicio;\n\n    date_inicio.setTime( date_inicio.getTime() \n                         - date_inicio.getTimezoneOffset()\n                         *60\n                         *1000);\n    \n    // En la base de datos, las fechas están guardadas en strings ISO de fecha\n    msg.payload.date_inicio = date_inicio.toISOString();\n    \n}\n\nif (msg.payload.fecha_fin != null) {\n    let fecha_fin = patron_fecha.exec(\n                        msg.payload.fecha_fin)[0].split(\"/\");\n                        \n    if (msg.payload.hora_fin != null) {\n        let hora_fin = patron_hora.exec(\n                        msg.payload.hora_fin)[0].split(\":\");\n        \n        msg.payload.date_fin = new Date(fecha_fin[2],\n                              fecha_fin[1]-1, fecha_fin[0],\n                              hora_fin[0], hora_fin[1]);\n    } else {\n        msg.payload.date_fin = new Date(fecha_fin[2],\n                              fecha_fin[1]-1, fecha_fin[0]);\n    }\n    \n    var date_fin = msg.payload.date_fin;\n\n    date_fin.setTime( date_fin.getTime() \n                         - date_fin.getTimezoneOffset()\n                         *60\n                         *1000);\n    \n    // En la base de datos, las fechas están guardadas en strings ISO de fecha\n    msg.payload.date_fin = date_fin.toISOString();\n    \n}\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 800,
+        "wires": [
+            [
+                "981e2bc96a604b6a"
+            ]
+        ]
+    },
+    {
+        "id": "64bad2e8c63bd3eb",
+        "type": "function",
+        "z": "05ebb2dc1794c426",
+        "name": "Timestamp a ISO String local",
+        "func": "msg.payload.fecha = new Date(msg.payload.fecha);\n\nmsg.payload.fecha.setTime( msg.payload.fecha.getTime() \n                     - msg.payload.fecha.getTimezoneOffset()\n                     *60\n                     *1000);\nmsg.payload.fecha = msg.payload.fecha.toISOString();\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1540,
+        "y": 160,
+        "wires": [
+            [
+                "aa70520deee4fc3c"
+            ]
+        ]
+    },
+    {
+        "id": "31979a374944a369",
+        "type": "function",
+        "z": "05ebb2dc1794c426",
+        "name": "Formatear fechas y horas a local",
+        "func": "\nif (msg.payload.fecha_inicio != null) {\n    fecha_inicio_bien = new Date(msg.payload.fecha_inicio);\n    msg.payload.fecha_inicio = fecha_inicio_bien.toLocaleString();\n}\n\nif (msg.payload.hora_inicio != null) {\n    hora_inicio_bien = new Date(msg.payload.hora_inicio);\n    msg.payload.hora_inicio = hora_inicio_bien.toLocaleString();\n}\n\nif (msg.payload.fecha_fin != null) {\n    fecha_fin_bien = new Date(msg.payload.fecha_fin);\n    msg.payload.fecha_fin = fecha_fin_bien.toLocaleString();\n}\n\nif (msg.payload.hora_fin != null) {\n    hora_fin_bien = new Date(msg.payload.hora_fin);\n    msg.payload.hora_fin = hora_fin_bien.toLocaleString();\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 740,
+        "wires": [
+            [
+                "786d9494d8c846f6"
+            ]
+        ]
+    },
+    {
+        "id": "88f91155b0bb56cb",
+        "type": "comment",
+        "z": "05ebb2dc1794c426",
+        "name": "Funcionalidad de filtrado de visualización",
+        "info": "",
+        "x": 200,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "92907122ebed4cf7",
+        "type": "link in",
+        "z": "05ebb2dc1794c426",
+        "name": "",
+        "links": [
+            "168639afa58f2475",
+            "1a9a35617eaa7237"
+        ],
+        "x": 125,
+        "y": 960,
+        "wires": [
+            [
+                "3800bf487954b4f4"
+            ]
+        ]
+    },
+    {
+        "id": "3800bf487954b4f4",
+        "type": "mongodb in",
+        "z": "05ebb2dc1794c426",
+        "mongodb": "6b0dbc3fe2272bf2",
+        "name": "Buscar usuarios por id_tarjeta",
+        "collection": "usuarios",
+        "operation": "find",
+        "x": 330,
+        "y": 960,
+        "wires": [
+            [
+                "9098fee8ebf20320"
+            ]
+        ]
+    },
+    {
+        "id": "9098fee8ebf20320",
+        "type": "link out",
+        "z": "05ebb2dc1794c426",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "3d34e4914f8c5c62"
+        ],
+        "x": 545,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "b5a69e75bc3d5b55",
+        "type": "debug",
+        "z": "05ebb2dc1794c426",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 590,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "51f1ffc6fcf8b376",
+        "type": "mongodb out",
+        "z": "05ebb2dc1794c426",
+        "mongodb": "6b0dbc3fe2272bf2",
+        "name": "Guardar intento de acceso en DB",
+        "collection": "intentos_acceso",
+        "payonly": true,
+        "upsert": false,
+        "multi": false,
+        "operation": "store",
+        "x": 1040,
+        "y": 1440,
+        "wires": []
+    },
+    {
+        "id": "0577b617de1fb260",
+        "type": "function",
+        "z": "05ebb2dc1794c426",
+        "name": "Timestamp a ISO String local",
+        "func": "msg.payload.fecha = new Date(msg.payload.fecha);\n\nmsg.payload.fecha.setTime( msg.payload.fecha.getTime() \n                     - msg.payload.fecha.getTimezoneOffset()\n                     *60\n                     *1000);\nmsg.payload.fecha = msg.payload.fecha.toISOString();\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 1440,
+        "wires": [
+            [
+                "51f1ffc6fcf8b376"
+            ]
+        ]
+    },
+    {
+        "id": "04f95f4689544ae8",
+        "type": "change",
+        "z": "05ebb2dc1794c426",
+        "name": "Rellenar campos",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.fecha",
+                "pt": "msg",
+                "to": "",
+                "tot": "date"
+            },
+            {
+                "t": "set",
+                "p": "payload.nombre",
+                "pt": "msg",
+                "to": "Desconocido",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload.admin",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "payload.acceso",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "payload.id_tarjeta",
+                "pt": "msg",
+                "to": "id_tarjeta",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 490,
+        "y": 1380,
+        "wires": [
+            [
+                "0577b617de1fb260"
+            ]
+        ]
+    },
+    {
+        "id": "d009203685515d22",
+        "type": "function",
+        "z": "05ebb2dc1794c426",
+        "name": "Añadir puerta",
+        "func": "msg.payload = {puerta : parseInt(msg.puerta)};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 1380,
+        "wires": [
+            [
+                "04f95f4689544ae8"
+            ]
+        ]
+    },
+    {
+        "id": "6168e01933b9bf66",
+        "type": "link in",
+        "z": "05ebb2dc1794c426",
+        "name": "",
+        "links": [
+            "2cd63b3146aca06b",
+            "37399fa3ed1946d7"
+        ],
+        "x": 165,
+        "y": 1340,
+        "wires": [
+            [
+                "d009203685515d22"
+            ]
+        ]
+    },
+    {
+        "id": "66dec1c15bba5469",
+        "type": "comment",
+        "z": "05ebb2dc1794c426",
+        "name": "Preparar intento_acceso denegado",
+        "info": "",
+        "x": 420,
+        "y": 1320,
+        "wires": []
+    },
+    {
+        "id": "db31fbfcd63c5c8d",
+        "type": "change",
+        "z": "05ebb2dc1794c426",
+        "name": "Rellenar campos",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.fecha",
+                "pt": "msg",
+                "to": "",
+                "tot": "date"
+            },
+            {
+                "t": "set",
+                "p": "payload.id_tarjeta",
+                "pt": "msg",
+                "to": "id_tarjeta",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload.acceso",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 490,
+        "y": 1520,
+        "wires": [
+            [
+                "0577b617de1fb260"
+            ]
+        ]
+    },
+    {
+        "id": "98078aa35b0a85de",
+        "type": "function",
+        "z": "05ebb2dc1794c426",
+        "name": "Añadir puerta",
+        "func": "msg.payload = msg.payload[0];\nmsg.payload.puerta = parseInt(msg.puerta);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 1520,
+        "wires": [
+            [
+                "db31fbfcd63c5c8d"
+            ]
+        ]
+    },
+    {
+        "id": "b27f25d0d413c57e",
+        "type": "link in",
+        "z": "05ebb2dc1794c426",
+        "name": "",
+        "links": [
+            "60470a2768b20beb",
+            "a5120960df797a1d"
+        ],
+        "x": 165,
+        "y": 1480,
+        "wires": [
+            [
+                "98078aa35b0a85de"
+            ]
+        ]
+    },
+    {
+        "id": "fd140c7b0237484f",
+        "type": "comment",
+        "z": "05ebb2dc1794c426",
+        "name": "Preparar intento_acceso permitido",
+        "info": "",
+        "x": 420,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "86491790af67e69d",
+        "type": "comment",
+        "z": "05ebb2dc1794c426",
+        "name": "Funcionalidad de registrar intentos de acceso",
+        "info": "",
+        "x": 250,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "d6a6806efab957b1",
+        "type": "mongodb out",
+        "z": "05ebb2dc1794c426",
+        "mongodb": "6b0dbc3fe2272bf2",
+        "name": "Actualizar usuarios",
+        "collection": "usuarios",
+        "payonly": true,
+        "upsert": true,
+        "multi": false,
+        "operation": "update",
+        "x": 1310,
+        "y": 1780,
+        "wires": []
+    },
+    {
+        "id": "06d42a27420e6f86",
+        "type": "link in",
+        "z": "05ebb2dc1794c426",
+        "name": "Formulario de creación de usuarios",
+        "links": [
+            "255a12cfb161e253"
+        ],
+        "x": 325,
+        "y": 1780,
+        "wires": [
+            [
+                "ce2c2dc485183faa"
+            ]
+        ]
+    },
+    {
+        "id": "34e1f5321147305c",
+        "type": "comment",
+        "z": "05ebb2dc1794c426",
+        "name": "Funcionalidad registrar usuario",
+        "info": "",
+        "x": 210,
+        "y": 1720,
+        "wires": []
+    },
+    {
+        "id": "c2b6677a96b7cfee",
+        "type": "function",
+        "z": "05ebb2dc1794c426",
+        "name": "Preparar actualización",
+        "func": "msg.query = {id_tarjeta : msg.payload.id_tarjeta}\nmsg.payload = {$set : \n                {nombre : msg.payload.nombre, \n                 id_tarjeta : msg.payload.id_tarjeta, \n                 admin : msg.payload.admin,\n                 fecha_creado : msg.payload.fecha_creado\n                }}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1080,
+        "y": 1780,
+        "wires": [
+            [
+                "d6a6806efab957b1"
+            ]
+        ]
+    },
+    {
+        "id": "bb93424b3fef2cd0",
+        "type": "link out",
+        "z": "05ebb2dc1794c426",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "81727de925788720"
+        ],
+        "x": 795,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "9889df08bca046e8",
+        "type": "link in",
+        "z": "05ebb2dc1794c426",
+        "name": "",
+        "links": [
+            "c6775ec671a12592"
+        ],
+        "x": 315,
+        "y": 200,
+        "wires": [
+            [
+                "62e30fe3b3bbd7c7"
+            ]
+        ]
+    },
+    {
+        "id": "55e0f1f5ee651572",
+        "type": "link in",
+        "z": "05ebb2dc1794c426",
+        "name": "",
+        "links": [
+            "85db6b9a292c4928"
+        ],
+        "x": 465,
+        "y": 460,
+        "wires": [
+            [
+                "bae5e9b4f467aba1"
+            ]
+        ]
+    },
+    {
+        "id": "736f95dc089e473f",
+        "type": "link in",
+        "z": "05ebb2dc1794c426",
+        "name": "",
+        "links": [
+            "28e672903d6e66dd"
+        ],
+        "x": 95,
+        "y": 1880,
+        "wires": [
+            [
+                "1dca2354b694f57a"
+            ]
+        ]
+    },
+    {
+        "id": "1dca2354b694f57a",
+        "type": "function",
+        "z": "05ebb2dc1794c426",
+        "name": "Rellenar campos",
+        "func": "msg.payload = {};\nmsg.payload.nombre = \"Por asignar\";\nmsg.payload.id_tarjeta = msg.id_tarjeta;\nmsg.payload.admin = false;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 1880,
+        "wires": [
+            [
+                "f86fbf74b3112a12",
+                "ce2c2dc485183faa"
+            ]
+        ]
+    },
+    {
+        "id": "67100f454da4ce53",
+        "type": "mongodb out",
+        "z": "05ebb2dc1794c426",
+        "mongodb": "6b0dbc3fe2272bf2",
+        "name": "Borrar usuario por id_tarjeta",
+        "collection": "usuarios",
+        "payonly": true,
+        "upsert": false,
+        "multi": false,
+        "operation": "delete",
+        "x": 620,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "03d0fcef70a129f0",
+        "type": "function",
+        "z": "05ebb2dc1794c426",
+        "name": "",
+        "func": "msg.payload = {id_tarjeta : msg.id_tarjeta};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 560,
+        "wires": [
+            [
+                "67100f454da4ce53",
+                "ac8aeb0809a2cb74"
+            ]
+        ]
+    },
+    {
+        "id": "a529c7f12b4bef43",
+        "type": "link in",
+        "z": "05ebb2dc1794c426",
+        "name": "",
+        "links": [
+            "069db1e9c27ca324"
+        ],
+        "x": 275,
+        "y": 540,
+        "wires": [
+            [
+                "03d0fcef70a129f0"
+            ]
+        ]
+    },
+    {
+        "id": "f86fbf74b3112a12",
+        "type": "link out",
+        "z": "05ebb2dc1794c426",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "7ec59fc2986d0176"
+        ],
+        "x": 395,
+        "y": 1920,
+        "wires": []
+    },
+    {
+        "id": "0e312f55ea5e98e2",
+        "type": "comment",
+        "z": "05ebb2dc1794c426",
+        "name": "Actualizar registro en el dashboard",
+        "info": "",
+        "x": 580,
+        "y": 1920,
+        "wires": []
+    },
+    {
+        "id": "ac8aeb0809a2cb74",
+        "type": "link out",
+        "z": "05ebb2dc1794c426",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "7ec59fc2986d0176"
+        ],
+        "x": 515,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "98db0e2c74974cf6",
+        "type": "comment",
+        "z": "05ebb2dc1794c426",
+        "name": "Actualizar registro en el dashboard",
+        "info": "",
+        "x": 700,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "7f8f91b148d9f098",
+        "type": "comment",
+        "z": "05ebb2dc1794c426",
+        "name": "Modo estandar",
+        "info": "",
+        "x": 140,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "a26ec2dc62fd4aa0",
+        "type": "comment",
+        "z": "05ebb2dc1794c426",
+        "name": "Modo espera_tarjeta",
+        "info": "",
+        "x": 150,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "f2af766c0933a4ab",
+        "type": "comment",
+        "z": "05ebb2dc1794c426",
+        "name": "Modo confirma_borrar",
+        "info": "",
+        "x": 160,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "84cbbd42e3ad47c6",
+        "type": "link in",
+        "z": "05ebb2dc1794c426",
+        "name": "",
+        "links": [
+            "45c1cc27e4bbea90"
+        ],
+        "x": 125,
+        "y": 1060,
+        "wires": [
+            [
+                "9b2c30ac3c94f586"
+            ]
+        ]
+    },
+    {
+        "id": "c72eaccb9165a81e",
+        "type": "link in",
+        "z": "05ebb2dc1794c426",
+        "name": "",
+        "links": [
+            "dc32161981ed446a"
+        ],
+        "x": 125,
+        "y": 1180,
+        "wires": [
+            [
+                "97a4e3cd14b685a2"
+            ]
+        ]
+    },
+    {
+        "id": "39b4178801f19230",
+        "type": "comment",
+        "z": "05ebb2dc1794c426",
+        "name": "Modo estandar",
+        "info": "",
+        "x": 580,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "74f1f9e156ab1c0e",
+        "type": "comment",
+        "z": "05ebb2dc1794c426",
+        "name": "Modo espera_tarjeta",
+        "info": "",
+        "x": 590,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "a14418b26d9e9c40",
+        "type": "comment",
+        "z": "05ebb2dc1794c426",
+        "name": "Modo confirma_borrar",
+        "info": "",
+        "x": 600,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "4553ae7d4a0c7b01",
+        "type": "link out",
+        "z": "05ebb2dc1794c426",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "5600b5a82c5f14bf"
+        ],
+        "x": 545,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "0decd3b121591827",
+        "type": "link out",
+        "z": "05ebb2dc1794c426",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "faf52d0c8d2de0f7"
+        ],
+        "x": 545,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "9b2c30ac3c94f586",
+        "type": "mongodb in",
+        "z": "05ebb2dc1794c426",
+        "mongodb": "6b0dbc3fe2272bf2",
+        "name": "Buscar usuarios por id_tarjeta",
+        "collection": "usuarios",
+        "operation": "find",
+        "x": 330,
+        "y": 1060,
+        "wires": [
+            [
+                "4553ae7d4a0c7b01"
+            ]
+        ]
+    },
+    {
+        "id": "97a4e3cd14b685a2",
+        "type": "mongodb in",
+        "z": "05ebb2dc1794c426",
+        "mongodb": "6b0dbc3fe2272bf2",
+        "name": "Buscar usuarios por id_tarjeta",
+        "collection": "usuarios",
+        "operation": "find",
+        "x": 330,
+        "y": 1180,
+        "wires": [
+            [
+                "0decd3b121591827"
+            ]
+        ]
+    },
+    {
+        "id": "ce2c2dc485183faa",
+        "type": "change",
+        "z": "05ebb2dc1794c426",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.fecha_creado",
+                "pt": "msg",
+                "to": "",
+                "tot": "date"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 530,
+        "y": 1780,
+        "wires": [
+            [
+                "dc657c15e9f7286b"
+            ]
+        ]
+    },
+    {
+        "id": "dc657c15e9f7286b",
+        "type": "function",
+        "z": "05ebb2dc1794c426",
+        "name": "Timestamp a ISO String local",
+        "func": "msg.payload.fecha_creado = new Date(msg.payload.fecha_creado);\n\nmsg.payload.fecha_creado.setTime( msg.payload.fecha_creado.getTime() \n                     - msg.payload.fecha_creado.getTimezoneOffset()\n                     *60\n                     *1000);\nmsg.payload.fecha_creado = msg.payload.fecha_creado.toISOString();\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 1780,
+        "wires": [
+            [
+                "c2b6677a96b7cfee"
+            ]
+        ]
+    },
+    {
+        "id": "62e30fe3b3bbd7c7",
+        "type": "function",
+        "z": "05ebb2dc1794c426",
+        "name": "",
+        "func": "msg.payload = [{$sort : {fecha_creado : -1}}];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 200,
+        "wires": [
+            [
+                "d958153ac6dc29ec"
+            ]
+        ]
+    },
+    {
+        "id": "59b175c6.ffb24c",
+        "type": "http response",
+        "z": "9a2c567d.c9bc58",
+        "name": "OTA Response",
+        "statusCode": "",
+        "headers": {},
+        "x": 2772.559814453125,
+        "y": 663.1071910858154,
+        "wires": []
+    },
+    {
+        "id": "d9beced3.f6add",
+        "type": "http in",
+        "z": "9a2c567d.c9bc58",
+        "name": "OTA Manager",
+        "url": "/esp8266-ota",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 88.05558013916016,
+        "y": 648.2856712341309,
+        "wires": [
+            [
+                "55397768.5b71a8"
+            ]
+        ]
+    },
+    {
+        "id": "e5efaa43.17c6c8",
+        "type": "file",
+        "z": "9a2c567d.c9bc58",
+        "name": "Save md5 Checksum",
+        "filename": "",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "true",
+        "x": 1660,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e7e37fb.655cc8",
+        "type": "file in",
+        "z": "9a2c567d.c9bc58",
+        "name": "Read firmware",
+        "filename": "",
+        "format": "",
+        "x": 920,
+        "y": 860,
+        "wires": [
+            [
+                "421c1ed34b85f46d"
+            ]
+        ]
+    },
+    {
+        "id": "72df3eab.91578",
+        "type": "change",
+        "z": "9a2c567d.c9bc58",
+        "name": "Extract filename",
+        "rules": [
+            {
+                "t": "set",
+                "p": "filename",
+                "pt": "msg",
+                "to": "firmware.directory",
+                "tot": "flow"
+            },
+            {
+                "t": "change",
+                "p": "filename",
+                "pt": "msg",
+                "from": "$",
+                "fromt": "re",
+                "to": "req.files.firmware[0].originalname",
+                "tot": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "req",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "res",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 619.375,
+        "y": 847.9166870117188,
+        "wires": [
+            [
+                "e7e37fb.655cc8"
+            ]
+        ]
+    },
+    {
+        "id": "bc5757c4.370a48",
+        "type": "change",
+        "z": "9a2c567d.c9bc58",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "filename",
+                "pt": "msg",
+                "from": "bin$",
+                "fromt": "re",
+                "to": "md5",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1420,
+        "y": 820,
+        "wires": [
+            [
+                "e5efaa43.17c6c8"
+            ]
+        ]
+    },
+    {
+        "id": "201e5caa.58ba44",
+        "type": "comment",
+        "z": "9a2c567d.c9bc58",
+        "name": "Firmware Upgrade",
+        "info": "The system determines which firmware to send based\non the MAC address, version, and MD5 headers in the\nrequest from the ESP8266.\n\nFirstly, it checks if a firmware hash file with \nthe MAC address as the name exists, or else if a \nfirmware file with the version as the name exists.\nIf neither exist then no update is available.\n\nIt then reads the corresponding MD5 hash from the\nhash file and compares to the MD5 hash in the\nrequest.  If they match then the firmware is up\nto date and no update is required.\n\nOtherwise, it sends the contents of the firmware\nbin file and the MD5 hash value.",
+        "x": 103.5,
+        "y": 46,
+        "wires": []
+    },
+    {
+        "id": "b938fd54.3b00c",
+        "type": "comment",
+        "z": "9a2c567d.c9bc58",
+        "name": "Firmware Management",
+        "info": "",
+        "x": 110.5,
+        "y": 542,
+        "wires": []
+    },
+    {
+        "id": "fa324c37.ad4ea",
+        "type": "template",
+        "z": "9a2c567d.c9bc58",
+        "name": "Firmware Manager",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "html",
+        "syntax": "mustache",
+        "template": "<html>\n    <head>\n        <title>ESP8266 OTA Firmware Manager</title>\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n        <link rel=\"stylesheet\" href=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css\">\n        <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js\"></script>\n        <script src=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js\"></script>\n        <style>\n            .file-btn-grp {\n                display: none;\n            }\n            body {\n                background-color: #f6f6f6;\n            }\n            .text_holder {\n                display: block;\n                max-width: 100%;\n                word-wrap: break-word;\n                line-height: 30px;\n            }\n            #main {\n                margin-top: 50px;\n                background-color: #ffffff;\n                border-radius: 5px;\n                width: 70%;\n                min-width: 500px;\n                border: 1px solid #545454;\n            }\n            .alert {\n                margin-top: 10px;\n                margin-bottom: 5px;\n            }\n            .link {\n                font-style: italic;\n            }\n            .listentry {\n                display: none;\n                list-style-type: none;\n            }\n        </style>\n\n    </head>\n    <body>\n        <div class=\"container\" id=\"main\">\n            <h1><small>ESP8266 OTA Firmware Manager</small></h1>\n            <h2><small>Upload New Firmware</small></h2>\n\n            <form role =\"form\" id=\"main_input_box\" action=\"esp8266-ota\" method=\"POST\" enctype=\"multipart/form-data\" class=\"form-inline\">\n                <input type=\"file\" accept=\".bin\" class=\"hidden\" id=\"fileUpload\" name=\"firmware\" placeholder=\"firmware.bin\">\n                <div class=\"form-group\">\n                <div class=\"input-group\">\n                    <span class=\"input-group-btn\">\n                        <button id=\"browse\" type=\"button\" class=\"btn btn-primary\">Browse...</button>\n                    </span>\n                    <input id=\"filename\" size=100 readonly=\"\" class=\"form-control\" placeholder=\"Firmware.bin\">\n                    <span class=\"input-group-btn\">\n                        <input type=\"submit\" value=\"Upload\" class=\"btn btn-primary add_button\">\n                    </span>\n                </div>\n                </div>\n            </form>\n\n            <h2><small>Current Firmware</small></h2>\n            <ul class=\"list-group\" id=\"list_of_items\">\n            </ul>\n        </div>\n\n        <div id=\"linkModal\" class=\"modal fade\" role=\"dialog\">\n            <div class=\"modal-dialog\">\n        \n                <!-- Modal content-->\n                <div class=\"modal-content\">\n                    <div class=\"modal-header\">\n                        <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\n                        <h4 class=\"modal-title\">Create Symbolic Link</h4>\n                    </div>\n                    <div class=\"modal-body\">\n                        <form class=\"form-horizontal\" id=\"linkForm\" role=\"form\" action=\"#\" method=\"POST\">\n                            <div class=\"form-group\">\n                                <label class=\"control-label  col-sm-2\" for=\"linkName\">Link:</label> \n                                <div class=\"col-sm-10\">\n                                    <input id=\"linkName\" name=\"linkName\" class=\"form-control\"/>\n                                </div>\n                            </div>\n                            <div class=\"form-group\">\n                                <label class=\"control-label  col-sm-2\" for=\"linkFile\">To:</label> \n                                <div class=\"col-sm-10\">\n                                    <input class=\"form-control\" id=\"linkFile\" name=\"linkFile\"/>\n                                </div>\n                            </div>\n                        </form>\n                    </div>\n                    <div class=\"modal-footer\">\n                        <button type=\"submit\" class=\"btn btn-success link-create\">Create</button>\n                        <button type=\"button\" class=\"btn btn-warning\" data-dismiss=\"modal\">Cancel</button>\n                    </div>\n                </div>\n            </div>\n        </div>\n        \n        <script>\n\n            var deleteButton = \"<button id='delete' class='btn btn-warning'>Delete</button>\";\n            var linkButton = \"<button id='link' class='btn btn-success'>Link</button>\";\n            var oneButton = \"<div class='file-btn-grp btn-group pull-right'>\" + deleteButton + \"</div>\";\n            var twoButtons = \"<div class='file-btn-grp btn-group pull-right'>\" + deleteButton + linkButton + \"</div>\";\n            \n            function addListEntry(list, filename, linkname) {\n            \n                var entry;\n                \n                if (linkname === undefined) {\n                    entry = $(\"<li class='listentry list-group-item'><div class='text_holder'><span>\" \n                    + filename + \"</span>\" + twoButtons + \"</div></li>\");\n                } else {\n                    entry = $(\"<li class='listentry list-group-item'><div class='text_holder'><span class='link'>\" \n                    + filename + \"</span> <span class='glyphicon glyphicon-arrow-right'></span> \" \n                    + linkname + oneButton + \"</div></li>\");\n                }\n                \n                entry.mouseover(function(){\n                    $(this).find(\".btn-group\").fadeIn(\"fast\");\n                });\n                entry.mouseleave(function(){\n                    $(this).find(\".btn-group\").fadeOut(\"slow\");\n                });\n                \n                entry.on(\"click\", \"button#delete\", function(){\n                    var listItem = this.parentElement.parentElement.parentElement;\n                    var file = this.parentElement.parentElement.childNodes[0].childNodes[0].data;\n                    $.ajax({\n                        type: 'DELETE',\n                        data: {\"filename\": file},\n                        success: function(result) {\n                            $(listItem).fadeOut(\"slow\", function(){\n                                listItem.remove();\n                            });\n                        },\n                        error: function(result) {\n                            $(listItem).append(\"<div class='alert alert-danger'>\"\n                                + \"<a href='#' class='close' data-dismiss='alert'\"\n                                + \"aria-label='close'>&times;</a>\"\n                                + result.responseText + \"</div>\");\n                        }\n                    });\n                });\n           \n                entry.on(\"click\", \"button#link\", function(){\n                    var file = this.parentElement.parentElement.childNodes[0].childNodes[0].data;\n                    $(\"#linkName\").val(\"\");\n                    $(\"#linkFile\").prop(\"disabled\", true).val(file);\n                    $(\"#linkName\").parent().removeClass(\"has-error\");\n                    $(\"#linkModal\").modal();\n                    $('#linkModal').on('shown.bs.modal', function () {\n                        $('#linkName').focus();\n                    });\n                });\n                \n                if (list.children().length == 0) {\n                    list.append(entry);\n                    entry.fadeIn(\"slow\");\n                    return;\n                }\n\n                if (filename < $(\"li:first span:first\", list).text()) {\n                    $(\"li:first\", list).before(entry);\n                    entry.fadeIn(\"slow\");\n                    return;\n                }\n                if (filename > $(\"li:last span:first\", list).text()) {\n                    $(\"li:last\", list).after(entry);\n                    entry.fadeIn(\"slow\");\n                    return;\n                }\n                \n                var count = 0;\n                var $li = $(\"li\", list);\n                do {\n                    var index = parseInt($li.length / 2);\n                    var $compare = $li.eq(index);\n                    var compare = $(\"span:first\",$compare).text();\n                    if (filename === compare) {\n                        break;\n                    }\n                    else if (filename > compare) {\n                        $li = $li.slice(index, $li.length);\n                    } else {\n                        $li = $li.slice(0, index);\n                    }\n                } while ($li.length > 1);\n\n                if (filename === compare) {\n                    $compare.slideUp(\"fast\").slideDown(\"slow\");\n                    return;\n                } else if (filename < compare) { \n                    entry.insertBefore($compare); \n                } else { \n                    entry.insertAfter($compare); \n                }\n                entry.slideDown(\"slow\");\n            }\n            \n            \n            var files = String(\"{{payload.files}}\").split(',');\n            var links = String(\"{{payload.links}}\").split(',');\n            \n            var list_of_items = $(\"#list_of_items\");\n            \n            files.forEach(function(file,index) {\n                if (links[index] == \"\") {\n                    addListEntry(this, file.slice(0,-4));\n                } else {\n                    addListEntry(this, file.slice(0,-4), links[index].slice(0,-4));\n                }\n            },list_of_items);\n           \n           \n            $(\"#linkModal\").on(\"click\", \"button.link-create\", function(event){\n               event.preventDefault();\n               if ($(\"#linkName\").val() == \"\") {\n                    $('#linkName').focus();\n                    $('#linkName').parent().addClass(\"has-error\");\n                    return false;\n               }\n               $(\"#linkFile\").prop(\"disabled\",false);               \n               $.ajax({\n                    type: 'PUT',\n                    data: $(\"#linkForm\").serialize(),\n                    success: function(result) {\n                        $(\"#linkModal\").modal('hide');\n                        addListEntry(list_of_items, $('#linkName').val(), $('#linkFile').val());\n                    },\n                    error: function(result) {\n                        $(\"#linkFile\").prop(\"disabled\", true);\n                        $('#linkName').focus();\n                        $('#linkName').parent().addClass(\"has-error\");\n                        $(linkForm).append(\"<div id='linkError' class='alert alert-danger'>\"\n                             + \"<a href='#' class='close' data-dismiss='alert'\"\n                             + \"aria-label='close'>&times;</a>\"\n                             + result.responseText + \"</div>\");\n                    }\n                });\n            });\n            \n            $(\"#browse\").on('click', function () {\n                fileUpload.click();\n            });\n            \n            $(\"#fileUpload\").on('change', function () {\n                $(\"#filename\").val($(\"#fileUpload\").val().split('/').pop().split('\\\\').pop());\n            });\n            \n            var frm = $(\"#main_input_box\");\n            \n            frm.submit( function( e ) {\n                e.preventDefault();\n                if ($('#fileUpload').val() == \"\") return null;\n                $.ajax( {\n                    url: frm.attr('action'),\n                    type: frm.attr('method'),\n                    data: new FormData( this ),\n                    processData: false,\n                    contentType: false,\n                    success: function(result) {\n                        addListEntry(list_of_items, $('#fileUpload').val().slice(0,-4).split('\\\\').pop());\n                        $('#fileUpload').val('');\n                        $(':text').val('');\n                    },\n                    error: function(result) {\n                        $(\"#main_input_box\").append(\"<div class='alert alert-danger'>\"\n                             + \"<a href='#' class='close' data-dismiss='alert'\"\n                             + \"aria-label='close'>&times;</a>\"\n                             + result.responseText + \"</div>\");\n                    }\n\n                });\n            });\n        </script>\n    </body>\n</html>",
+        "output": "str",
+        "x": 1381.3333740234375,
+        "y": 645.8135375976562,
+        "wires": [
+            [
+                "59b175c6.ffb24c"
+            ]
+        ]
+    },
+    {
+        "id": "7a811173.c43d7",
+        "type": "http in",
+        "z": "9a2c567d.c9bc58",
+        "name": "OTA Delete",
+        "url": "/esp8266-ota",
+        "method": "delete",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 83.125,
+        "y": 933.75,
+        "wires": [
+            [
+                "f0cda1c9.0bf1a"
+            ]
+        ]
+    },
+    {
+        "id": "dd1a2d9.e77aed",
+        "type": "catch",
+        "z": "9a2c567d.c9bc58",
+        "name": "File Error",
+        "scope": [
+            "6207dc25.8aa654",
+            "1ba75f98.24816",
+            "4e19de83.e138",
+            "bfd327b9.3de7b8",
+            "2d0ef949.779706"
+        ],
+        "x": 1870.6665573120117,
+        "y": 805.3333158493042,
+        "wires": [
+            [
+                "67a7dc2f.518594"
+            ]
+        ]
+    },
+    {
+        "id": "67a7dc2f.518594",
+        "type": "change",
+        "z": "9a2c567d.c9bc58",
+        "name": "Error",
+        "rules": [
+            {
+                "t": "set",
+                "p": "statusCode",
+                "pt": "msg",
+                "to": "500",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "error.message",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2159,
+        "y": 791,
+        "wires": [
+            [
+                "59b175c6.ffb24c"
+            ]
+        ]
+    },
+    {
+        "id": "b80436a5.5baa88",
+        "type": "change",
+        "z": "9a2c567d.c9bc58",
+        "name": "Change to MD5 filename",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload.filename",
+                "pt": "msg",
+                "from": "bin",
+                "fromt": "str",
+                "to": "md5",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1879.1666564941406,
+        "y": 936.6666269302368,
+        "wires": [
+            [
+                "1ba75f98.24816"
+            ]
+        ]
+    },
+    {
+        "id": "3abafd11.36eea2",
+        "type": "http in",
+        "z": "9a2c567d.c9bc58",
+        "name": "OTA Link",
+        "url": "/esp8266-ota",
+        "method": "put",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 84,
+        "y": 1041.5,
+        "wires": [
+            [
+                "4c043353.d88a2c"
+            ]
+        ]
+    },
+    {
+        "id": "4c043353.d88a2c",
+        "type": "change",
+        "z": "9a2c567d.c9bc58",
+        "name": "Extract filename",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload.linkName",
+                "pt": "msg",
+                "from": "$",
+                "fromt": "re",
+                "to": ".bin",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload.linkFile",
+                "pt": "msg",
+                "from": "$",
+                "fromt": "re",
+                "to": ".bin",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1385,
+        "y": 1044,
+        "wires": [
+            [
+                "4e19de83.e138"
+            ]
+        ]
+    },
+    {
+        "id": "e72c4816.4a4988",
+        "type": "change",
+        "z": "9a2c567d.c9bc58",
+        "name": "Change to MD5 Filename",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload.linkName",
+                "pt": "msg",
+                "from": "bin$",
+                "fromt": "re",
+                "to": "md5",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload.linkFile",
+                "pt": "msg",
+                "from": "bin$",
+                "fromt": "re",
+                "to": "md5",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1908,
+        "y": 1045,
+        "wires": [
+            [
+                "bfd327b9.3de7b8"
+            ]
+        ]
+    },
+    {
+        "id": "f0cda1c9.0bf1a",
+        "type": "change",
+        "z": "9a2c567d.c9bc58",
+        "name": "Extract filename",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload.filename",
+                "pt": "msg",
+                "from": "$",
+                "fromt": "re",
+                "to": ".bin",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1382.5,
+        "y": 937.5,
+        "wires": [
+            [
+                "6207dc25.8aa654"
+            ]
+        ]
+    },
+    {
+        "id": "5065ff85.4b455",
+        "type": "http response",
+        "z": "9a2c567d.c9bc58",
+        "name": "OTA Response",
+        "statusCode": "",
+        "headers": {},
+        "x": 3210.059814453125,
+        "y": 366.06256103515625,
+        "wires": []
+    },
+    {
+        "id": "30cc65a7.c9413a",
+        "type": "file in",
+        "z": "9a2c567d.c9bc58",
+        "name": "Load Firmware",
+        "filename": "",
+        "format": "",
+        "sendError": false,
+        "x": 2586.999786376953,
+        "y": 399.88400077819824,
+        "wires": [
+            [
+                "5065ff85.4b455",
+                "83dcae00.efc07"
+            ]
+        ]
+    },
+    {
+        "id": "bcc38d43.d6a6d",
+        "type": "change",
+        "z": "9a2c567d.c9bc58",
+        "name": "No Update",
+        "rules": [
+            {
+                "t": "set",
+                "p": "statusCode",
+                "pt": "msg",
+                "to": "304",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2956.107421875,
+        "y": 258.52682304382324,
+        "wires": [
+            [
+                "5065ff85.4b455"
+            ]
+        ]
+    },
+    {
+        "id": "441b3198.1ba9b",
+        "type": "change",
+        "z": "9a2c567d.c9bc58",
+        "name": "Forbidden",
+        "rules": [
+            {
+                "t": "set",
+                "p": "statusCode",
+                "pt": "msg",
+                "to": "403",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Forbidden",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2933.999755859375,
+        "y": 135.84826469421387,
+        "wires": [
+            [
+                "5065ff85.4b455"
+            ]
+        ]
+    },
+    {
+        "id": "83dcae00.efc07",
+        "type": "debug",
+        "z": "9a2c567d.c9bc58",
+        "name": "Update sent",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "req.headers.x-esp8266-sta-mac",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2932.0000610351562,
+        "y": 405.955472946167,
+        "wires": []
+    },
+    {
+        "id": "ffae2a7c.345a38",
+        "type": "change",
+        "z": "9a2c567d.c9bc58",
+        "name": "Save MD5 Hash",
+        "rules": [
+            {
+                "t": "set",
+                "p": "headers.x-MD5",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "change",
+                "p": "filename",
+                "pt": "msg",
+                "from": "md5",
+                "fromt": "str",
+                "to": "bin",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2375.785789489746,
+        "y": 387.0268669128418,
+        "wires": [
+            [
+                "30cc65a7.c9413a"
+            ]
+        ]
+    },
+    {
+        "id": "7c5e29fb.0c9e38",
+        "type": "switch",
+        "z": "9a2c567d.c9bc58",
+        "name": "Update type",
+        "property": "req.headers.x-esp8266-mode",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "spiffs",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "sketch",
+                "vt": "str"
+            }
+        ],
+        "checkall": "false",
+        "outputs": 2,
+        "x": 474.5179748535156,
+        "y": 228.52685356140137,
+        "wires": [
+            [
+                "bcc38d43.d6a6d"
+            ],
+            [
+                "2c6c7c1f.1859a4"
+            ]
+        ]
+    },
+    {
+        "id": "83889006.7d8a3",
+        "type": "switch",
+        "z": "9a2c567d.c9bc58",
+        "name": "Compare MD5 hash",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "req.headers.x-esp8266-sketch-md5",
+                "vt": "msg"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 1945.41064453125,
+        "y": 342.13403129577637,
+        "wires": [
+            [
+                "bcc38d43.d6a6d",
+                "aa40f0d6.18501"
+            ],
+            [
+                "ffae2a7c.345a38",
+                "356049da.b71496"
+            ]
+        ]
+    },
+    {
+        "id": "e1d02c45.1ad83",
+        "type": "catch",
+        "z": "9a2c567d.c9bc58",
+        "name": "File error",
+        "scope": [
+            "30cc65a7.c9413a",
+            "2fa044cb.9d727c"
+        ],
+        "x": 2628.3572387695312,
+        "y": 348.52682304382324,
+        "wires": [
+            [
+                "bcc38d43.d6a6d",
+                "8bf70d0a.ea88"
+            ]
+        ]
+    },
+    {
+        "id": "1cc7ae82.4814d1",
+        "type": "switch",
+        "z": "9a2c567d.c9bc58",
+        "name": "Check user agent",
+        "property": "req.headers.user-agent",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "ESP8266-http-Update",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "outputs": 2,
+        "x": 311.21436309814453,
+        "y": 134.95541191101074,
+        "wires": [
+            [
+                "441b3198.1ba9b"
+            ],
+            [
+                "7c5e29fb.0c9e38"
+            ]
+        ]
+    },
+    {
+        "id": "2c6c7c1f.1859a4",
+        "type": "change",
+        "z": "9a2c567d.c9bc58",
+        "name": "Get MAC hash filename",
+        "rules": [
+            {
+                "t": "set",
+                "p": "filename",
+                "pt": "msg",
+                "to": "firmware.directory",
+                "tot": "flow"
+            },
+            {
+                "t": "change",
+                "p": "filename",
+                "pt": "msg",
+                "from": "$",
+                "fromt": "re",
+                "to": "req.headers.x-esp8266-sta-mac",
+                "tot": "msg"
+            },
+            {
+                "t": "change",
+                "p": "filename",
+                "pt": "msg",
+                "from": "$",
+                "fromt": "re",
+                "to": ".md5",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 703.6428451538086,
+        "y": 354.9554100036621,
+        "wires": [
+            [
+                "1ab2632f.8b6cfd",
+                "c2557ff0149c100d"
+            ]
+        ]
+    },
+    {
+        "id": "2fa044cb.9d727c",
+        "type": "file in",
+        "z": "9a2c567d.c9bc58",
+        "name": "Load Hash",
+        "filename": "",
+        "format": "utf8",
+        "sendError": false,
+        "x": 1734.410629272461,
+        "y": 341.7768840789795,
+        "wires": [
+            [
+                "83889006.7d8a3"
+            ]
+        ]
+    },
+    {
+        "id": "3e452e93.f8c502",
+        "type": "change",
+        "z": "9a2c567d.c9bc58",
+        "name": "Get Version hash filename",
+        "rules": [
+            {
+                "t": "set",
+                "p": "filename",
+                "pt": "msg",
+                "to": "firmware.directory",
+                "tot": "flow"
+            },
+            {
+                "t": "change",
+                "p": "filename",
+                "pt": "msg",
+                "from": "$",
+                "fromt": "re",
+                "to": "req.headers.x-esp8266-version",
+                "tot": "msg"
+            },
+            {
+                "t": "change",
+                "p": "filename",
+                "pt": "msg",
+                "from": "$",
+                "fromt": "re",
+                "to": ".md5",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1183.7857666015625,
+        "y": 459.5982036590576,
+        "wires": [
+            [
+                "97d98a42.adaa58",
+                "bb982f89.a1316",
+                "1cde284bf9b9db80"
+            ]
+        ]
+    },
+    {
+        "id": "8bf70d0a.ea88",
+        "type": "debug",
+        "z": "9a2c567d.c9bc58",
+        "name": "Firmware file error",
+        "active": false,
+        "console": "false",
+        "complete": "error",
+        "x": 2891.2142944335938,
+        "y": 347.09826469421387,
+        "wires": []
+    },
+    {
+        "id": "d0080f07.24e4d",
+        "type": "http in",
+        "z": "9a2c567d.c9bc58",
+        "name": "OTA Request",
+        "url": "/esp8266-ota/update",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 75,
+        "y": 134.95541191101074,
+        "wires": [
+            [
+                "1cc7ae82.4814d1",
+                "fec83a29.cbb558"
+            ]
+        ]
+    },
+    {
+        "id": "a3bf5c34.aa108",
+        "type": "switch",
+        "z": "9a2c567d.c9bc58",
+        "name": "",
+        "property": "req.headers.x-esp8266-version",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "nnull"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "outputs": 2,
+        "x": 687.4642333984375,
+        "y": 466.74108695983887,
+        "wires": [
+            [
+                "3e452e93.f8c502"
+            ],
+            [
+                "3cae9c88.db30a4"
+            ]
+        ]
+    },
+    {
+        "id": "3cae9c88.db30a4",
+        "type": "change",
+        "z": "9a2c567d.c9bc58",
+        "name": "Version in Request",
+        "rules": [
+            {
+                "t": "set",
+                "p": "req.headers.x-esp8266-version",
+                "pt": "msg",
+                "to": "req.params.version",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 896.9285278320312,
+        "y": 532.8125286102295,
+        "wires": [
+            [
+                "3e452e93.f8c502"
+            ]
+        ]
+    },
+    {
+        "id": "fec83a29.cbb558",
+        "type": "debug",
+        "z": "9a2c567d.c9bc58",
+        "name": "Update req",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 246.2144012451172,
+        "y": 235.66967582702637,
+        "wires": []
+    },
+    {
+        "id": "50e66cdf.532e44",
+        "type": "debug",
+        "z": "9a2c567d.c9bc58",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1271.773494720459,
+        "y": 382.1797161102295,
+        "wires": []
+    },
+    {
+        "id": "4da6dc07.a7a994",
+        "type": "debug",
+        "z": "9a2c567d.c9bc58",
+        "name": "",
+        "active": false,
+        "console": "false",
+        "complete": "false",
+        "x": 1315.0234375,
+        "y": 294.0390625,
+        "wires": []
+    },
+    {
+        "id": "bb982f89.a1316",
+        "type": "debug",
+        "z": "9a2c567d.c9bc58",
+        "name": "",
+        "active": false,
+        "console": "false",
+        "complete": "filename",
+        "x": 1393.0234375,
+        "y": 555.0390625,
+        "wires": []
+    },
+    {
+        "id": "2642b78e.e21848",
+        "type": "debug",
+        "z": "9a2c567d.c9bc58",
+        "name": "",
+        "active": false,
+        "console": "false",
+        "complete": "filename",
+        "x": 1770.0234375,
+        "y": 524.0390625,
+        "wires": []
+    },
+    {
+        "id": "669e61f3.97669",
+        "type": "debug",
+        "z": "9a2c567d.c9bc58",
+        "name": "",
+        "active": false,
+        "console": "false",
+        "complete": "filename",
+        "x": 1789.0234375,
+        "y": 407.0390625,
+        "wires": []
+    },
+    {
+        "id": "aa40f0d6.18501",
+        "type": "debug",
+        "z": "9a2c567d.c9bc58",
+        "name": "",
+        "active": false,
+        "console": "false",
+        "complete": "filename",
+        "x": 2148.0234375,
+        "y": 279.0390625,
+        "wires": []
+    },
+    {
+        "id": "356049da.b71496",
+        "type": "debug",
+        "z": "9a2c567d.c9bc58",
+        "name": "",
+        "active": false,
+        "console": "false",
+        "complete": "filename",
+        "x": 2170.0234375,
+        "y": 506.0390625,
+        "wires": []
+    },
+    {
+        "id": "f0729e15.c31c3",
+        "type": "httpInMultipart",
+        "z": "9a2c567d.c9bc58",
+        "name": "OTA Upload",
+        "url": "/esp8266-ota",
+        "method": "post",
+        "fields": "[{ \"name\": \"firmware\"}]",
+        "swaggerDoc": "",
+        "x": 79.7857437133789,
+        "y": 812.4286108016968,
+        "wires": [
+            [
+                "2d0ef949.779706"
+            ]
+        ]
+    },
+    {
+        "id": "c2cbaac2.b38c58",
+        "type": "config",
+        "z": "9a2c567d.c9bc58",
+        "name": "Firmware Config",
+        "properties": [
+            {
+                "p": "firmware.directory",
+                "pt": "flow",
+                "to": "/home/pi/OTA/",
+                "tot": "str"
+            }
+        ],
+        "active": true,
+        "x": 123.0714111328125,
+        "y": 360.1428527832031,
+        "wires": []
+    },
+    {
+        "id": "2d0ef949.779706",
+        "type": "fs-ops-move",
+        "z": "9a2c567d.c9bc58",
+        "name": "Store firmware",
+        "sourcePath": "req.files.firmware[0].destination",
+        "sourcePathType": "msg",
+        "sourceFilename": "req.files.firmware[0].filename",
+        "sourceFilenameType": "msg",
+        "destPath": "firmware.directory",
+        "destPathType": "flow",
+        "destFilename": "req.files.firmware[0].originalname",
+        "destFilenameType": "msg",
+        "link": false,
+        "x": 365.89284896850586,
+        "y": 818.3332557678223,
+        "wires": [
+            [
+                "72df3eab.91578",
+                "59b175c6.ffb24c"
+            ]
+        ]
+    },
+    {
+        "id": "4e19de83.e138",
+        "type": "fs-ops-move",
+        "z": "9a2c567d.c9bc58",
+        "name": "Link firmware",
+        "sourcePath": "",
+        "sourcePathType": "str",
+        "sourceFilename": "payload.linkFile",
+        "sourceFilenameType": "msg",
+        "destPath": "firmware.directory",
+        "destPathType": "flow",
+        "destFilename": "payload.linkName",
+        "destFilenameType": "msg",
+        "link": true,
+        "x": 1644.5,
+        "y": 1044,
+        "wires": [
+            [
+                "e72c4816.4a4988"
+            ]
+        ]
+    },
+    {
+        "id": "bfd327b9.3de7b8",
+        "type": "fs-ops-move",
+        "z": "9a2c567d.c9bc58",
+        "name": "Link MD5",
+        "sourcePath": "",
+        "sourcePathType": "str",
+        "sourceFilename": "payload.linkFile",
+        "sourceFilenameType": "msg",
+        "destPath": "firmware.directory",
+        "destPathType": "flow",
+        "destFilename": "payload.linkName",
+        "destFilenameType": "msg",
+        "link": true,
+        "x": 2152.5,
+        "y": 1044,
+        "wires": [
+            [
+                "59b175c6.ffb24c"
+            ]
+        ]
+    },
+    {
+        "id": "6207dc25.8aa654",
+        "type": "fs-ops-delete",
+        "z": "9a2c567d.c9bc58",
+        "name": "Delete firmware",
+        "path": "firmware.directory",
+        "pathType": "flow",
+        "filename": "payload.filename",
+        "filenameType": "msg",
+        "x": 1628.6250457763672,
+        "y": 936.5832777023315,
+        "wires": [
+            [
+                "b80436a5.5baa88"
+            ]
+        ]
+    },
+    {
+        "id": "1ba75f98.24816",
+        "type": "fs-ops-delete",
+        "z": "9a2c567d.c9bc58",
+        "name": "Delete MD5 Hash",
+        "path": "firmware.directory",
+        "pathType": "flow",
+        "filename": "payload.filename",
+        "filenameType": "msg",
+        "x": 2170.833206176758,
+        "y": 936.6665878295898,
+        "wires": [
+            [
+                "59b175c6.ffb24c"
+            ]
+        ]
+    },
+    {
+        "id": "97d98a42.adaa58",
+        "type": "fs-ops-access",
+        "z": "9a2c567d.c9bc58",
+        "name": "Check for MD5 file exists",
+        "path": "",
+        "pathType": "str",
+        "filename": "filename",
+        "filenameType": "msg",
+        "read": true,
+        "write": false,
+        "throwerror": false,
+        "x": 1497.2857055664062,
+        "y": 459.6696147918701,
+        "wires": [
+            [
+                "2fa044cb.9d727c",
+                "669e61f3.97669"
+            ],
+            [
+                "bcc38d43.d6a6d",
+                "2642b78e.e21848"
+            ]
+        ]
+    },
+    {
+        "id": "1ab2632f.8b6cfd",
+        "type": "fs-ops-access",
+        "z": "9a2c567d.c9bc58",
+        "name": "Check for MD5 file exists",
+        "path": "",
+        "pathType": "str",
+        "filename": "filename",
+        "filenameType": "msg",
+        "read": true,
+        "write": false,
+        "throwerror": false,
+        "x": 1009.357177734375,
+        "y": 349.09826469421387,
+        "wires": [
+            [
+                "2fa044cb.9d727c",
+                "4da6dc07.a7a994"
+            ],
+            [
+                "a3bf5c34.aa108",
+                "50e66cdf.532e44"
+            ]
+        ]
+    },
+    {
+        "id": "3b4b06ed.61028a",
+        "type": "fs-ops-link",
+        "z": "9a2c567d.c9bc58",
+        "name": "Get Links",
+        "path": "firmware.directory",
+        "pathType": "flow",
+        "filename": "payload.files",
+        "filenameType": "msg",
+        "link": "payload.links",
+        "linkType": "msg",
+        "x": 776.4999923706055,
+        "y": 648.3333110809326,
+        "wires": [
+            [
+                "fa324c37.ad4ea"
+            ]
+        ]
+    },
+    {
+        "id": "55397768.5b71a8",
+        "type": "fs-ops-dir",
+        "z": "9a2c567d.c9bc58",
+        "name": "Firmware listing",
+        "path": "firmware.directory",
+        "pathType": "flow",
+        "filter": "*.bin",
+        "filterType": "str",
+        "dir": "payload.files",
+        "dirType": "msg",
+        "x": 493.0355987548828,
+        "y": 647.8015928268433,
+        "wires": [
+            [
+                "3b4b06ed.61028a"
+            ]
+        ]
+    },
+    {
+        "id": "421c1ed34b85f46d",
+        "type": "md5",
+        "z": "9a2c567d.c9bc58",
+        "name": "",
+        "fieldToHash": "payload",
+        "fieldTypeToHash": "msg",
+        "hashField": "payload",
+        "hashFieldType": "msg",
+        "x": 1170,
+        "y": 840,
+        "wires": [
+            [
+                "bc5757c4.370a48"
+            ]
+        ]
+    },
+    {
+        "id": "c2557ff0149c100d",
+        "type": "debug",
+        "z": "9a2c567d.c9bc58",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 930,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "1cde284bf9b9db80",
+        "type": "debug",
+        "z": "9a2c567d.c9bc58",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1470,
+        "y": 400,
+        "wires": []
+    }
+]
